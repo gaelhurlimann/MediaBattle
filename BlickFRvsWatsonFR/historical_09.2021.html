@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <title>Blick FR vs Watson FR</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha - v4.6.0
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+      <!-- Uncomment below if you prefer to use an image logo -->
+     <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+       
+
+<nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link   scrollto" href="historical_09.2021.html">September 2021</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+</nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-1 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>Blick FR vs Watson FR</h1>
+          <h2>septembre 2021</h2>
+          <h2>Good news! Blick FR is deepening the gap with Watson FR. Last month, the difference in average visits per day (-68.0%) was 245.4% more than previous month (177%).</h2>
+        </div>
+        <div class="col-lg-6 order-2 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <canvas id="monthly-compare" width="540" height="300"></canvas>
+          <script>
+              Chart.defaults.font.size = 16;
+              Chart.defaults.color = 'rgba(255, 255, 255, 0.6)';
+              Chart.defaults.borderColor = 'rgba(255, 255, 255, 0.6)';
+              new Chart(document.getElementById("monthly-compare"), {
+                type: 'bar',
+                data: {
+                  labels: [ 'septembre', 'août'],
+                  datasets: [
+                    {
+                      label: "Blick FR",
+                      backgroundColor: "rgba(255, 0, 0, 0.8)",
+                      data: [ '34126', '1000']
+                    }, {
+                      label: "Watson FR",
+                      backgroundColor:"rgba(30,144,255, 0.8)",
+                      data: [ '16626', '16677']
+                    }
+                  ]
+                },
+                options: {
+                    plugins: {
+                        title: {
+                            display: true,
+                            color: "white",
+                            text: 'Visits per day'
+                        }
+                      }
+                  }
+                
+            });
+        </script>
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+ <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Daily stats</h2>
+          <p>septembre 2021 daily visitors</p>
+      
+        <canvas id="fullMonth" width="1234" height="616"></canvas>
+  <script>
+  // build an array with all trends
+  let dailyTrends = ['#KohLanta, Jungkook, Frau Rickli, #bundesrat, #DeadlineDay', '#xhaka, Texas, #SUIGRE, #sef21, büezer', 'Drake, #CoinBeastSweepstakes, #ABBA, Texas, #Zukunftsteam', '#CoinBeastSweepstakes, Drake, #GiveawayAudi, mittelstand, Raum', '#Wirhabenkeinepandemie, Maurer, #AwayFromHome, #UKRFRA, #AwayFromHomeFestival', '#SUIITA, Yann Sommer, #AHMEDSYLLA, #MondayMotivation, #svizzeraitalia', '#Belmondo, El Salvador, Beileid, #BitcoinDay, #suiita', '#Zertifikatspflicht, platzer, El Salvador, #CoronaInfoCH, #BitcoinDay', '#Zertifikatspflicht, #nirsui, #ItaliaLituania, Faschismus, #sonkezsençalkapımı', '#Zertifikatspflicht, #nirsui, #PlayStationShowcase, #DiamondLeague, #TheMatrixResurrections', '#September11, #NeverForget, #srfarena, #911Anniversary, #SchleFaZ', '#September11, Namjoon, Ronaldo, #NeverForget, #ybfcz', '#Triell, #HRC48, #USOpen, Ueli, Medvedev', '#MetGala, #HRC48, #AppleEvent, Ueli Maurer, #Triell', '#AppleEvent, #YBMUFC, #ScienceComm21, #KohLanta, #YBMUN', '#lexnetflix, #InterRealMadrid, #ScienceComm21, #Inspiration4, #swissdemocracyday', 'Bundeshaus, Sturm, Wasserwerfer, #bersetgate, Zaun', '#srfarena, HAVE A SAFE FLIGHT, #StopitTamedia, Renten, #bundeshaus', '#StopitTamedia, #BURARS, winterthur, #Bersetgate, #InterBologna', '#BTSatUNGA, #OurPrideBTS, #StopitTamedia, #GotARMYRightBehindYou, #KCORP', '#stopittamedia, #btsatunga, #kcorp, #hrc48, #evergrande', 'Schweiz, #COVID19, Impfung, Switzerland, #KohLanta', 'Schweiz, #COVID19, Switzerland, #Bitcoin, Impfung', '#Bitcoin, Schweiz, #COVID19, Switzerland, Zemmour', '#srfarena, #CHEMCI, Schweiz, #Bitcoin, Switzerland', '#CHvote, #Abst21, #Ehefueralle, #mariagepourtous, #btw21', '#btw21, #Ehefueralle, #chvote, #Abst21, Schweiz', 'Zertifikat, #WTOPublicForum, #btw21, #HRC48, #NewWorldMMO', 'Messi, #KohLanta, #WTOPublicForum, #srfclub, #PSGMCI', 'Barça, #MyUniverse, #allesaufdentisch, #Sarkozy, #WTOPublicForum']
+
+  const footer = (tooltipItems) => {
+
+      // alert(tooltipItems[2].label);
+        let currTrends = String(dailyTrends[tooltipItems[2].dataIndex]);
+        currTrends = currTrends.replaceAll(", ", "\n- ");
+        return 'Trending topics:\n- ' + currTrends;
+  };
+/*const label = (tooltipItems) => {
+          if(tooltipItems.datasetIndex == 0){
+            return 'hey, label';    
+          }else{
+            return tooltipItems.datasetIndex.label; 
+          } 
+    };
+    */
+Chart.defaults.color = 'black';
+Chart.defaults.borderColor = 'black';
+
+ new Chart(document.getElementById("fullMonth"), {
+  type: "bar",
+  data: {
+    labels: ['01.09.2021', '02.09.2021', '03.09.2021', '04.09.2021', '05.09.2021', '06.09.2021', '07.09.2021', '08.09.2021', '09.09.2021', '10.09.2021', '11.09.2021', '12.09.2021', '13.09.2021', '14.09.2021', '15.09.2021', '16.09.2021', '17.09.2021', '18.09.2021', '19.09.2021', '20.09.2021', '21.09.2021', '22.09.2021', '23.09.2021', '24.09.2021', '25.09.2021', '26.09.2021', '27.09.2021', '28.09.2021', '29.09.2021', '30.09.2021'],
+    datasets: [
+      {
+        type: "bar",
+        backgroundColor: ['rgba(255, 0, 0, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(36, 114, 26, 0.8)', 'rgba(36, 114, 26, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(255, 0, 0, 0.8)', 'rgba(255, 0, 0, 0.8)', 'rgba(255, 0, 0, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(36, 114, 26, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(255, 0, 0, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(36, 114, 26, 0.8)', 'rgba(36, 114, 26, 0.8)', 'rgba(54, 162, 235, 0.8)'],
+        borderColor: "rgba(54, 162, 235, 1)",
+        borderWidth: 1,
+        label: "Difference",
+        order: 2,
+        yAxisID: 'A',
+        data: [-55.5, -76.8, -81.7, -82.1, -64.3, -58.7, -63.5, -68.1, -78.4, -71.5, -58.5, -44.6, -52.7, -57.2, -71.1, -86.5, -58.1, -67.5, -74.6, -69.8, -78.0, -68.0, -62.2, -74.3, -61.7, -52.3, -70.8, -88.7, -85.0, -66.0]
+      },
+      {
+        type: "line",
+        order: 1,
+        label: "Blick FR",
+        borderColor: "rgba(255, 0, 0, 0.8)",
+        data: [30400.0, 34600.0, 36900.0, 31100.0, 29400.0, 34600.0, 33600.0, 36600.0, 38700.0, 35700.0, 26500.0, 22200.0, 30200.0, 38000.0, 40400.0, 44700.0, 34200.0, 31900.0, 36800.0, 34000.0, 38300.0, 32500.0, 31000.0, 32299.999999999996, 26100.0, 28700.0, 34600.0, 41000.0, 39900.0, 38900.0],
+        lineTension: 0, //
+        yAxisID: 'B',
+        fill: false 
+      },
+      {
+        type: "line",
+        order: 0,
+        label: "Watson FR",
+        borderColor: "rgba(30,144,255, 0.8)",
+        data: [17200.0, 15400.0, 15500.0, 13000.0, 15100.0, 18900.0, 17400.0, 18000.0, 16900.0, 16900.0, 14500.0, 14100.0, 17600.0, 21100.0, 19200.0, 17700.0, 18800.0, 15800.0, 16800.0, 16400.0, 16800.0, 16000.0, 16300.0, 14800.0, 13800.0, 16800.0, 16500.0, 15800.0, 16100.000000000002, 19600.0],
+        lineTension: 0, //
+        yAxisID: 'B',
+        fill: false 
+      }
+    ]
+  },
+    options: {
+        interaction: {
+          intersect: false,
+          mode: 'index'
+        },
+        plugins: {
+            tooltip: {
+                callbacks: {
+                   footer: footer
+                  // label: label
+                }
+            }
+        },
+        scales: {
+            A: {
+                type: 'linear',
+                position: 'right',
+                max: 100,
+                grid: {
+                 display:false
+                },
+                 ticks: {
+                    max: 100,
+                    min: 0
+                },
+                 title: {
+                    display: true,
+                    text: 'Percent difference'
+                }
+            },
+            B: {
+                type: 'linear',
+                position: 'left',
+                title: {
+                    display: true,
+                    text: 'Visits per day'
+                }
+            }
+        }
+    }
+ });
+
+
+</script>
+
+        </p>
+        </div>
+<!-- ======= Portfolio cards =======
+        <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-app">App</li>
+          <li data-filter=".filter-card">Card</li>
+          <li data-filter=".filter-web">Web</li>
+        </ul>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h3>This is just a test</h3>
+              <p> lfksgjhliofgsjlfkgsjfgjlskjsfgkll jkjfgslkgfjskljfgskljgfskl lfksgjhliofgsjlfkgsjfgjlskjsfgkll jkjfgslkgfjskljfgskljgfskl lfksgjhliofgsjlfkgsjfgjlskjsfgkll jkjfgslkgfjskljfgskljgfskl lfksgjhliofgsjlfkgsjfgjlskjsfgkll jkjfgslkgfjskljfgskljgfskl lfksgjhliofgsjlfkgsjfgjlskjsfgkll jkjfgslkgfjskljfgskljgfskl lfksgjhliofgsjlfkgsjfgjlskjsfgkll jkjfgslkgfjskljfgskljgfskl lfksgjhliofgsjlfkgsjfgjlskjsfgkll jkjfgslkgfjskljfgskljgfskl lfksgjhliofgsjlfkgsjfgjlskjsfgkll jkjfgslkgfjskljfgskljgfskl  ENF</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Card 2</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Card 1</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Card 3</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+       -->
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+  <main id="main">
+  
+    <!-- ======= Cliens Section =======
+    <section id="cliens" class="cliens section-bg">
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in">
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+      </div>
+    </section> 
+    End Cliens Section -->
+
+    <!-- ======= About Us Section ======= 
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
+              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <a href="#" class="btn-learn-more">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    End About Us Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+              <h3>Tops and flops of the month</h3>
+              <p>
+              In a nutshell: what was the best and worst day of the month in the competition for visits between Blick FR and Watson FR?
+                            </p>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>Best</span>  28.09.2021 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <p>
+                      <strong>Woaw!</strong><br/>On 28.09.2021, Blick FR was closest to Watson FR, with a -88% difference in visits only (that's 20% smaller than average).<br/>
+This day, we had 41,000 visits (vs 15,800 for Watson FR).<br/><br/>
+This was our #2 day of the Month in terms of visits.<br/><br/>
+These were the most trending Twitter topics in Switzerland on that day:<br/>
+Zertifikat, #WTOPublicForum, #btw21, #HRC48, #NewWorldMMO
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>Worst</span>  12.09.2021 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      <strong>Well, not so good…</strong> <br/>On 12.09.2021, Blick FR was really distanciated by Watson FR, with a -44% difference in visits (that's 23% more than average). This is our worst day in the battle.<br/><br/>
+This day, we had 22,200 visits (vs 14,100 for Watson FR).<br/><br/>
+This was our #30 day of the Month in terms of visits.<br/><br/>
+These were the most trending Twitter topics on that day:<br/>
+#September11, Namjoon, Ronaldo, #NeverForget, #ybfcz
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Top Headlines</h2>
+          <p>For each day, the top news of the days for Switzerland, according to a service called <a href="https://gnews.io/">Gnews.io</a>.<br/>
+          Unfortunately, we are not so sure the data is reliable, but the very reliable Google doesn't provide a history of top news.</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Mercredi 01 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse  show " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #24 day in terms of visits.<br/>
+This was our #27 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.lematin.ch/story/le-gendarme-boursier-americain-poursuit-les-auteurs-dune-fraude-433417981707">Cryptomonnaies : Le gendarme boursier américain poursuit les auteurs d’une fraude</a> – lematin.ch</li>
+<li><a href="https://www.20min.ch/fr/story/le-gendarme-boursier-americain-poursuit-les-auteurs-dune-fraude-433417981707">Cryptomonnaies : Le gendarme boursier américain poursuit les auteurs d’une fraude</a> – 20 Minutes</li>
+<li><a href="https://www.rfi.fr/fr/afrique/20210901-vih-johnson-johnson-arr%C3%AAte-ses-essais-en-afrique-pour-trouver-un-vaccin">VIH: Johnson & Johnson arrête ses essais en Afrique pour trouver un vaccin</a> – RFI</li>
+<li><a href="https://www.lorientlejour.com/article/1273495/apple-va-lancer-une-plate-forme-de-musique-classique-par-abonnement.html">Apple va lancer une plate-forme de musique classique par abonnement</a> – L'Orient-Le Jour</li>
+<li><a href="https://www.rts.ch/sport/football/12459501-equipe-de-suisse-la-suisse-simpose-pour-la-premiere-de-murat-yakin.html">Equipe de Suisse: la Suisse s'impose pour la première de Murat Yakin</a> – RTS.ch</li>
+<li><a href="https://www.francetvinfo.fr/sante/maladie/coronavirus/pass-sanitaire/commerce-les-grands-magasins-sont-en-crise_4756717.html">Commerce : les grands magasins sont en crise</a> – Franceinfo</li>
+<li><a href="https://www.20min.ch/fr/story/la-these-du-suicide-par-police-interposee-ne-peut-etre-ecartee-149901465050">Morges (VD) : La thèse du suicide par police interposée «ne peut être écartée»</a> – 20 Minutes</li>
+<li><a href="https://www.lematin.ch/story/le-veteran-almodovar-donne-le-coup-denvoi-du-festival-de-venise-222642745912">Cinéma : Le vétéran Almodovar donne le coup d’envoi du festival de Venise</a> – lematin.ch</li>
+<li><a href="https://www.rts.ch/sport/football/12459874-equipe-de-suisse-granit-xhaka-teste-positif-au-covid19.html">Equipe de Suisse: Granit Xhaka testé positif au Covid-19</a> – RTS.ch</li>
+<li><a href="https://www.20min.ch/fr/story/homme-tue-par-un-policier-trois-balles-ont-ete-tirees-677743935687">Coups de feu en gare de Morges (VD)</a> – 20 Minutes</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-2">Jeudi 02 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #15 day in terms of visits.<br/>
+This was our #8 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.lematin.ch/story/des-celebrites-protestent-contre-la-loi-sur-lavortement-au-texas-912782444407">États-Unis : Des célébrités protestent contre la loi sur l’avortement au Texas</a> – lematin.ch</li>
+<li><a href="https://www.lematin.ch/story/environ-70-des-salvadoriens-opposes-au-bitcoin-de-cours-legal-644253738868">Salvador : Une majorité de Salvadoriens opposés au bitcoin de cours légal</a> – lematin.ch</li>
+<li><a href="https://www.20min.ch/fr/story/une-procureure-inculpee-apres-la-mort-dun-joggeur-noir-en-2020-967671151769">États-Unis : Une procureure inculpée après la mort d’un joggeur noir en 2020</a> – 20 Minutes</li>
+<li><a href="https://www.rts.ch/info/monde/12460947-au-moins-41-morts-dans-la-region-de-new-york-apres-les-pluies-de-louragan-ida.html">Au moins 41 morts dans la région de New York après les pluies de l'ouragan Ida</a> – RTS.ch</li>
+<li><a href="https://www.rts.ch/info/monde/12460947-au-moins-25-morts-dans-la-region-de-new-york-apres-les-pluies-de-louragan-ida.html">Au moins 41 morts dans la région de New York après les pluies de l'ouragan Ida</a> – RTS.ch</li>
+<li><a href="https://www.france24.com/fr/info-en-continu/20210902-us-open-zverev-et-barty-avancent-en-trombe-%C3%A0-new-york-qui-se-remet-de-la-temp%C3%AAte">US Open: Zverev et Barty avancent en trombe à New York qui se remet de la tempête</a> – FRANCE 24</li>
+<li><a href="https://www.rts.ch/info/monde/12460947-au-moins-17-morts-a-new-york-dans-les-pluies-torrentielles-de-louragan-ida.html">Au moins 17 morts à New York dans les pluies torrentielles de l'ouragan Ida</a> – RTS.ch</li>
+<li><a href="https://www.20min.ch/fr/story/la-mdma-est-prisee-a-lucerne-et-a-zurich-cest-la-coke-840896977411">Tests : La MDMA est prisée à Lucerne et à Zurich, c’est la coke</a> – 20 Minutes</li>
+<li><a href="https://www.lematin.ch/story/trois-sur-trois-pour-fribourg-gotteron-398489033159">Hockey sur glace : Trois sur trois pour Fribourg-Gottéron</a> – lematin.ch</li>
+<li><a href="https://www.rts.ch/info/monde/12460947-au-moins-13-morts-a-new-york-dans-les-pluies-torrentielles-de-louragan-ida.html">Au moins 13 morts à New York dans les pluies torrentielles de l'ouragan Ida</a> – RTS.ch</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-3">Vendredi 03 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #9 day in terms of visits.<br/>
+This was our #5 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.lematin.ch/story/carlos-alcaraz-18-ans-a-deja-tout-dun-grand-998553141230">Tennis - Carlos Alcaraz élimine Stefanos Tsitsipas à l'US Open</a> – lematin.ch</li>
+<li><a href="https://www.rts.ch/info/regions/vaud/12465667-rassemblement-pour-denoncer-un-crime-policier-apres-le-drame-de-morges.html">Rassemblement pour dénoncer un "crime policier" après le drame de Morges</a> – RTS.ch</li>
+<li><a href="https://www.lematin.ch/story/biden-veut-declassifier-des-documents-sur-le-11-septembre-833638470838">États-Unis : Biden veut déclassifier des documents sur le 11-Septembre</a> – lematin.ch</li>
+<li><a href="https://www.radiolac.ch/actualite/suisse/aucun-joueur-ne-devine-la-bonne-combinaison-de-leuro-millions-29/">Aucun joueur ne devine la bonne combinaison de l'Euro Millions</a> – radiolac.ch</li>
+<li><a href="https://www.lematin.ch/story/vol-deroute-au-belarus-rapport-onusien-attendu-en-novembre-905287673933">rapport onusien attendu en novembre - Le Matin</a> – lematin.ch</li>
+<li><a href="https://www.20min.ch/fr/story/biden-denonce-lencouragement-pernicieux-a-la-delation-au-texas-695727673150">Avortement : Biden dénonce l’encouragement «pernicieux» à la délation au Texas</a> – 20 Minutes</li>
+<li><a href="https://www.lematin.ch/story/biden-denonce-lencouragement-pernicieux-a-la-delation-au-texas-695727673150">Avortement : Biden dénonce l’encouragement «pernicieux» à la délation au Texas</a> – lematin.ch</li>
+<li><a href="https://www.leparisien.fr/faits-divers/accident-mortel-du-tgv-est-en-2015-un-proces-requis-pour-la-sncf-deux-filiales-et-trois-salaries-03-09-2021-7SQ24JRBNVFOHLTGZYIYGN54TM.php">Accident mortel du TGV Est en 2015 : un procès requis pour la SNCF, deux filiales et trois salariés</a> – Le Parisien</li>
+<li><a href="https://www.rfj.ch/rfj/Actualite/economie/Accident-mortel-du-TGV-Est-en-2015-proces-requis-pour-la-SNCF.html">Accident mortel du TGV Est en 2015: procès requis pour la SNCF</a> – RFJ</li>
+<li><a href="https://www.sudinfo.be/id414635/article/2021-09-03/accident-mortel-dun-tgv-en-2015-la-sncf-deux-filiales-et-trois-salaries-seront">Accident mortel d’un TGV en 2015: la SNCF, deux filiales et trois salariés seront jugés pour "blessures et homicides involontaires"</a> – Sudinfo.be</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-4">Samedi 04 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #22 day in terms of visits.<br/>
+This was our #4 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.rts.ch/sport/tennis/12467146-us-open-djokovic-lache-un-set-face-a-nishikori.html">US Open: Djokovic lâche un set face à Nishikori</a> – RTS.ch</li>
+<li><a href="https://www.20min.ch/fr/story/peine-confirmee-pour-le-saboteur-des-antennes-de-la-police-713604485597">Zurich : Peine confirmée pour le saboteur des antennes de la police</a> – 20 Minutes</li>
+<li><a href="https://www.rts.ch/info/regions/12466984-la-braderie-de-moutier-laboratoire-a-taille-reelle-du-certificat-covid.html">La braderie de Moutier, laboratoire à taille réelle du certificat Covid</a> – RTS.ch</li>
+<li><a href="https://www.20min.ch/fr/story/personne-ne-veut-quitter-son-pays-on-senfuit-pour-nos-vie-498988472087">Genève : «Personne ne veut quitter son pays, on s’enfuit pour nos vie»</a> – 20 Minutes</li>
+<li><a href="https://www.rts.ch/sport/tennis/12466647-us-open-bencic-continue-sa-balade.html">US Open: Bencic continue sa balade</a> – RTS.ch</li>
+<li><a href="https://www.20min.ch/fr/story/soutien-psychologique-aux-temoins-du-drame-mortel-378036395343">Immolation à Lutry (VD)</a> – 20 Minutes</li>
+<li><a href="https://www.20min.ch/fr/story/joe-biden-se-rend-a-new-york-et-dans-le-new-jersey-mardi-275970524014">Tempête Ida : Joe Biden se rend à New York et dans le New Jersey mardi</a> – 20 Minutes</li>
+<li><a href="https://www.rts.ch/sport/football/12466755-equipe-de-suisse-le-moment-ideal-pour-renouer-avec-la-victoire-face-a-litalie.html">Equipe de Suisse: le moment idéal pour renouer avec la victoire face à l'Italie</a> – RTS.ch</li>
+<li><a href="https://www.lematin.ch/story/verstappen-selancera-en-pole-position-a-domicile-220963507578">Automobile : Verstappen s’élancera en pole position à «domicile»</a> – lematin.ch</li>
+<li><a href="https://www.20min.ch/fr/story/personnel-hospitalier-menace-par-des-patients-indisciplines-225363908768">Bâle : Personnel hospitalier menacé par des patients indisciplinés</a> – 20 Minutes</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-5">Dimanche 05 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #26 day in terms of visits.<br/>
+This was our #19 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.rts.ch/sport/football/12468181-qualifs-mondial-2022-la-suisse-tient-les-champions-d-europe-en-echec.html">Qualifs Mondial 2022: la Suisse tient les champions d'Europe en échec</a> – RTS.ch</li>
+<li><a href="https://www.rts.ch/sport/football/12468933-qualifs-mondial-2022-ce-nest-presque-pas-normal-sourit-sommer.html">Qualifs Mondial 2022: "ce n'est presque pas normal", sourit Sommer</a> – RTS.ch</li>
+<li><a href="https://www.rts.ch/sport/football/12468181-equipe-de-suisse-la-nati-tient-les-champions-deurope-en-echec.html">Qualifs Mondial 2022: la Suisse tient les champions d'Europe en échec</a> – RTS.ch</li>
+<li><a href="https://www.rts.ch/info/monde/12468291-des-putschistes-affirment-avoir-capture-le-president-alpha-conde-en-guinee.html">Des putschistes affirment avoir capturé le président Alpha Condé en Guinée</a> – RTS.ch</li>
+<li><a href="https://www.rts.ch/info/monde/12468291-des-putschistes-affirment-avoir-capture-le-president-alpha-conde-en-guinee.html?rts_source=rss_t">Des putschistes affirment avoir capturé le président Alpha Condé en Guinée</a> – RTS.ch</li>
+<li><a href="https://www.rts.ch/info/monde/12468373-le-president-de-la-croixrouge-va-rencontrer-les-talibans-en-afghanistan.html">Le président de la Croix-Rouge va rencontrer les talibans en Afghanistan</a> – RTS.ch</li>
+<li><a href="https://www.leparisien.fr/seine-saint-denis-93/le-bourget-sous-la-fusee-ariane-une-dictee-de-lespace-signee-thomas-pesquet-05-09-2021-KYOGRLI3FBFFVBGYMX3Q7UESYA.php">Le Bourget : sous la fusée Ariane, "une dictée de l’espace" signée Thomas Pesquet</a> – Le Parisien</li>
+<li><a href="https://www.rts.ch/sport/football/12468610-equipe-de-suisse-fabian-frei-titulaire-pour-son-retour.html">Equipe de Suisse: Fabian Frei titulaire pour son retour</a> – RTS.ch</li>
+<li><a href="https://www.20min.ch/fr/story/deux-medecins-bernois-contre-le-vaccin-sanctionnes-545898105231">Berne : Deux médecins bernois contre le vaccin sanctionnés</a> – 20 Minutes</li>
+<li><a href="https://www.rfj.ch/rfj/Actualite/Region/20210905-Pari-reussi-pour-la-Braderie-prevotoise.html">Pari réussi pour la Braderie prévôtoise</a> – RFJ</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-6">Lundi 06 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-6" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #13 day in terms of visits.<br/>
+This was our #23 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.20min.ch/fr/story/le-chantier-de-la-chevillarde-reprend-et-sarrete-aussitot-106094908063">Chêne-Bougeries (GE) : Le chantier de la Chevillarde reprend… et s’arrête aussitôt</a> – 20 Minutes</li>
+<li><a href="https://www.20min.ch/fr/story/la-voleuse-nallait-pas-a-lhopital-pour-des-soins-985139117397">Neuchâtel : La voleuse n’allait pas à l’hôpital pour des soins</a> – 20 Minutes</li>
+<li><a href="https://www.rts.ch/info/culture/cinema/12472121-monstre-sacre-du-cinema-jeanpaul-belmondo-est-mort-a-88-ans.html">Jean-Paul Belmondo, le "magnifique" du cinéma français, est mort à 88 ans</a> – RTS.ch</li>
+<li><a href="https://www.lematin.ch/story/belinda-bencic-passe-en-quart-de-finale-893900273674">Tennis : Bencic a eu son test et verra les quarts à New York</a> – lematin.ch</li>
+<li><a href="https://www.lfm.ch/actualite/suisse/le-gourmand-menu-de-la-semaine-du-gout-milite-pour-la-proximite/">Le gourmand menu de la Semaine du Goût milite pour la proximité</a> – lfm.ch</li>
+<li><a href="https://www.rjb.ch/rjb/Actualite/Monde/20210906-Le-comedien-Jean-Paul-Belmondo-est-decede.html">Le comédien Jean-Paul Belmondo est décédé</a> – RJB</li>
+<li><a href="https://www.20min.ch/fr/story/lacteur-jean-paul-belmondo-est-decede-474176827133">France : L’acteur Jean-Paul Belmondo est décédé</a> – 20 Minutes</li>
+<li><a href="https://www.rts.ch/sport/mecanises/auto/12470679-f1-bottas-signe-chez-alfa-romeo.html">F1: Bottas signe chez Alfa Romeo</a> – RTS.ch</li>
+<li><a href="https://www.lematin.ch/story/angelina-jolie-blessee-de-voir-brad-pitt-collaborer-avec-harvey-weinstein-301170847514">"Bien sûr que ça fait mal"</a> – lematin.ch</li>
+<li><a href="https://www.20min.ch/fr/story/voici-a-quoi-ressembleront-les-reactions-969633716346">WhatsApp : Voici à quoi ressembleront les réactions</a> – 20 Minutes</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-7">Mardi 07 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-7" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #18 day in terms of visits.<br/>
+This was our #20 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.rjb.ch/rjb/Actualite/Monde/Recul-inedit-de-la-lutte-contre-sida-tuberculose-et-paludisme.html">Recul inédit de la lutte contre sida, tuberculose et paludisme</a> – RJB</li>
+<li><a href="https://www.rts.ch/info/regions/vaud/12475529-les-sanctions-contre-les-zadistes-du-mormont-sont-disproportionnees-selon-amnesty.html">Les sanctions contre les zadistes du Mormont sont disproportionnées, selon Amnesty</a> – RTS.ch</li>
+<li><a href="https://www.lematin.ch/story/jair-bolsonaro-attaque-les-institutions-et-les-elections-868829367932">Brésil : Jair Bolsonaro attaque les institutions et les élections</a> – lematin.ch</li>
+<li><a href="https://www.lematin.ch/story/des-dizaines-dopposants-du-regime-dechu-liberes-en-guinee-244455403879">Afrique de l’Ouest : Des dizaines d’opposants du régime déchu libérés en Guinée</a> – lematin.ch</li>
+<li><a href="https://www.20min.ch/fr/story/lausanne-et-geneve-plus-cosmopolites-et-jeunes-que-berne-et-zurich-629442157181">Démographie : Lausanne et Genève plus cosmopolites et jeunes que Berne et Zurich</a> – 20 Minutes</li>
+<li><a href="https://www.lfm.ch/lifestyle/cote-people/nicole-scherzinger-les-pussycat-dolls-la-poursuivent-en-justice/">Nicole Scherzinger : les Pussycat Dolls la poursuivent en justice</a> – lfm.ch</li>
+<li><a href="https://www.lematin.ch/story/des-clients-de-la-cgn-ont-ete-pirates-652185211622">Soustraction de données : Des clients de la CGN ont été piratés</a> – lematin.ch</li>
+<li><a href="https://information.tv5monde.com/info/revirement-d-un-tribunal-americain-sur-l-usage-d-ivermectine-contre-le-covid-423409">Revirement d'un tribunal américain sur l'usage d'ivermectine contre le Covid</a> – TV5MONDE</li>
+<li><a href="https://www.rts.ch/info/regions/autres-cantons/12475031-la-rsi-va-supprimer-45-postes-a-plein-temps-dici-fin-2022.html">La RSI va supprimer 45 postes à plein temps d'ici fin 2022</a> – RTS.ch</li>
+<li><a href="https://www.lematin.ch/story/les-talibans-revelent-une-partie-de-leur-gouvernement-445151545450">Afghanistan : Les talibans révèlent une partie de leur gouvernement</a> – lematin.ch</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-8">Mercredi 08 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-8" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #11 day in terms of visits.<br/>
+This was our #15 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.rtn.ch/rtn/Actualite/Monde/Syndrome-de-Guillain-Barre-tres-rare-avec-le-vaccin-d-AstraZeneca.html">Syndrome de Guillain-Barré " très rare " avec le vaccin d'AstraZeneca</a> – RTN</li>
+<li><a href="https://www.lematin.ch/story/zverev-passe-en-demi-finale-a-new-york-342555485123">Tennis : Zverev passe en demi-finale à New York</a> – lematin.ch</li>
+<li><a href="https://www.rjb.ch/rjb/Sport/Tennis/Alexander-Zverev-maintient-la-cadence.html">Alexander Zverev maintient la cadence</a> – RJB</li>
+<li><a href="https://www.allnews.ch/content/march%C3%A9s/les-march%C3%A9s-europ%C3%A9ens-se-m%C3%A9fient-avant-plusieurs-d%C3%A9cisions-de-politique-mon%C3%A9taire">Les marchés européens se méfient avant plusieurs décisions de politique monétaire</a> – allnews.ch</li>
+<li><a href="https://www.radiolac.ch/sport/football/yakin-effectue-quatre-changements-contre-lirlande-du-nord/">Yakin effectue quatre changements contre l'Irlande du Nord</a> – radiolac.ch</li>
+<li><a href="https://www.rts.ch/info/monde/12477725-au-bresil-bolsonaro-ne-cache-pas-son-mepris-de-la-democratie.html">Au Brésil, Bolsonaro ne cache pas son mépris de la démocratie</a> – RTS.ch</li>
+<li><a href="https://www.lematin.ch/story/un-bolsonaro-putschiste-et-de-plus-en-plus-isole-918683083637">Brésil : Un Bolsonaro «putschiste» et de plus en plus isolé</a> – lematin.ch</li>
+<li><a href="https://www.20min.ch/fr/story/une-fillette-perd-un-bout-de-doigt-sur-une-installation-artistique-342902006303">Bussigny (VD) : Une fillette perd un bout de doigt sur une installation artistique</a> – 20 Minutes</li>
+<li><a href="https://www.rts.ch/info/regions/vaud/12477638-offensive-politique-pour-des-rives-de-lacs-accessibles-sur-geneve-et-vaud.html">Offensive politique pour des rives de lacs accessibles sur Genève et Vaud</a> – RTS.ch</li>
+<li><a href="https://www.lematin.ch/story/le-telescope-james-webb-rejoindra-les-etoiles-le-18-decembre-678543509813">Le télescope James Webb rejoindra les étoiles le 18 décembre</a> – lematin.ch</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-9">Jeudi 09 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-9" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #6 day in terms of visits.<br/>
+This was our #6 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.rts.ch/info/monde/12479567-joe-biden-decrete-lextension-de-la-vaccination-obligatoire-le-suivi-du-covid19-dans-le-monde.html">Joe Biden décrète l'extension de la vaccination obligatoire - Le suivi du Covid-19 dans le monde</a> – RTS.ch</li>
+<li><a href="https://www.lematin.ch/story/joe-biden-etend-la-vaccination-obligatoire-aux-etats-unis-313883904077">Covid-19 : Joe Biden étend la vaccination obligatoire aux États-Unis</a> – lematin.ch</li>
+<li><a href="https://www.rtn.ch/rtn/Sport/Autres-sports/Ajla-Del-Ponte-a-prouve-sa-constance.html">Ajla Del Ponte a prouvé sa constance</a> – RTN</li>
+<li><a href="https://www.20min.ch/fr/story/les-malversations-sont-allees-crescendo-688642594061">Vaud : «Les malversations sont allées crescendo»</a> – 20 Minutes</li>
+<li><a href="https://www.rfj.ch/rfj/Actualite/Suisse/Pres-de-1000-personnes-protestent-a-Berne-contre-le-certificat.html">Près de 1000 personnes protestent à Berne contre le certificat</a> – RFJ</li>
+<li><a href="https://www.netcost-security.fr/actualites/43359/la-nasa-fixe-une-nouvelle-date-de-lancement-pour-le-telescope-spatial-james-webb/">La NASA fixe une nouvelle date de lancement pour le télescope spatial James Webb</a> – Netcost-security.fr</li>
+<li><a href="https://www.radiolac.ch/sport/football/violences-conjugales-jerome-boateng-condamne-a-une-lourde-amende/">Violences conjugales: Jérôme Boateng condamné à une lourde amende</a> – radiolac.ch</li>
+<li><a href="https://www.lfm.ch/actualite/suisse/romandie/vaud/la-caisse-cantonale-de-compensation-avs-soupconnee-dirregularites/">La Caisse cantonale vaudoise de compensation AVS soupçonnée de graves irrégularités</a> – lfm.ch</li>
+<li><a href="https://www.20min.ch/fr/story/boom-dinscriptions-a-la-vaccination-apres-lannonce-du-conseil-federal-854115567226">Suisse romande : Boom des inscriptions à la vaccination après l’annonce du Conseil fédéral</a> – 20 Minutes</li>
+<li><a href="https://www.lematin.ch/story/transfusions-des-antivax-refusent-le-sang-des-vaccines-281024228068">des antivax refusent le sang des vaccinés - Le Matin</a> – lematin.ch</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-10">Vendredi 10 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-10" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #12 day in terms of visits.<br/>
+This was our #11 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.lematin.ch/story/les-vaccins-protegent-des-formes-graves-dues-au-variant-delta-923869227080">Covid-19 : Les vaccins protègent des formes graves dues au variant Delta</a> – lematin.ch</li>
+<li><a href="https://www.rts.ch/sport/mecanises/auto/12483085-f1-bottas-partira-en-tete-lors-du-sprint-a-monza.html">F1: Bottas partira en tête lors du sprint à Monza</a> – RTS.ch</li>
+<li><a href="https://www.futura-sciences.com/sciences/actualites/voie-lactee-mysterieux-signal-provenance-centre-voie-lactee-93408/">Un mystérieux signal en provenance du centre de la Voie lactée</a> – Futura</li>
+<li><a href="https://www.allnews.ch/content/r%C3%A9glementation/un-comit%C3%A9-interpartis-sengage-en-faveur-des-mesures-pour-les-m%C3%A9dias">Un comité interpartis s'engage en faveur des mesures pour les médias</a> – allnews.ch</li>
+<li><a href="https://www.netcost-security.fr/science/43537/le-module-russe-de-liss-declenche-un-detecteur-de-fumee-pendant-la-recharge-de-la-batterie/">Le module russe de l'ISS déclenche un détecteur de fumée pendant la recharge de la batterie</a> – Netcost-security.fr</li>
+<li><a href="https://www.rjb.ch/rjb/Actualite/Suisse/La-Suisse-termine-son-aide-d-urgence-et-entame-la-reconstruction.html">La Suisse termine son aide d’urgence et entame la reconstruction</a> – RJB</li>
+<li><a href="https://www.lematin.ch/story/sophie-de-quay-nous-voulons-que-cet-album-fasse-la-difference-619695350459">"Nous voulons que cet album fasse la différence" - Le Matin</a> – lematin.ch</li>
+<li><a href="https://www.20min.ch/fr/story/cinq-cents-uvres-de-francis-bacon-contrefaites-saisies-a-bologne-672269278850">Peinture : Cinq cents œuvres de Francis Bacon, contrefaites, saisies à Bologne</a> – 20 Minutes</li>
+<li><a href="https://www.lematin.ch/story/cinq-cents-uvres-de-francis-bacon-contrefaites-saisies-a-bologne-672269278850">Peinture : Cinq cents œuvres de Francis Bacon, contrefaites, saisies à Bologne</a> – lematin.ch</li>
+<li><a href="https://www.lfm.ch/actualite/culture/apres-lhommage-national-a-bebel-obseques-dans-lintimite/">Après l'hommage national à "Bébel", obsèques dans l'intimité</a> – lfm.ch</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-11">Samedi 11 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-11" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #28 day in terms of visits.<br/>
+This was our #24 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.rts.ch/sport/tennis/12484230-us-open-emma-raducanu-nouvelle-reine-de-new-york.html">US Open: Emma Raducanu nouvelle reine de New York</a> – RTS.ch</li>
+<li><a href="https://www.lfm.ch/actualite/suisse/ambri-brille-dans-sa-nouvelle-valascia-geneve-sarrache/">Ambri brille dans sa nouvelle Valascia, Genève s'arrache</a> – lfm.ch</li>
+<li><a href="https://www.rts.ch/sport/hockey/12484253-national-league-fribourg-tombe-sechement-a-ambri.html">National League: Fribourg tombe sèchement à Ambri</a> – RTS.ch</li>
+<li><a href="https://www.lematin.ch/story/gerard-louvin-et-son-mari-vises-par-une-nouvelle-enquete-pour-viols-sur-mineurs-214633433585">Médias : Gérard Louvin et son mari visés par une nouvelle enquête pour «viols sur mineurs»</a> – lematin.ch</li>
+<li><a href="https://www.lematin.ch/story/bottas-gagne-le-sprint-verstappen-partira-en-tete-dimanche-259599433962">Automobilisme : Bottas gagne le sprint, Verstappen partira en tête dimanche</a> – lematin.ch</li>
+<li><a href="https://www.rts.ch/sport/mecanises/auto/12484372-f1-bottas-remporte-le-sprint-verstappen-sadjuge-la-pole.html">F1: Bottas remporte le sprint, Verstappen s'adjuge la pole</a> – RTS.ch</li>
+<li><a href="https://www.20min.ch/fr/story/pres-de-1500-personnes-manifestent-contre-les-mesures-covid-19-312747546948">Lucerne : Près de 1500 personnes manifestent contre les mesures Covid-19</a> – 20 Minutes</li>
+<li><a href="https://www.rjb.ch/rjb/Actualite/Suisse/Pres-de-1500-opposants-aux-mesures-manifestent-a-Lucerne.html">Près de 1500 opposants aux mesures manifestent à Lucerne</a> – RJB</li>
+<li><a href="https://www.20min.ch/fr/story/des-restos-tentent-de-contourner-legalement-le-certificat-covid-644159820876">Suisse : Des restos tentent de contourner légalement le certificat Covid</a> – 20 Minutes</li>
+<li><a href="https://www.lematin.ch/story/sion-veut-refaire-le-s-coup-s-362303367907">Football : Sion veut refaire le(s) coup(s)</a> – lematin.ch</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-12">Dimanche 12 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-12" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #30 day in terms of visits.<br/>
+This was our #30 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.radiolac.ch/actualite/monza-ricciardo-simpose-devant-norris-lors-du-gp-ditalie/">Monza: Ricciardo s'impose devant Norris lors du GP d'Italie</a> – radiolac.ch</li>
+<li><a href="https://www.rts.ch/sport/football/12485723-super-league-pas-de-vainqueur-entre-lausanne-et-sion.html">Super League: pas de vainqueur entre Lausanne et Sion</a> – RTS.ch</li>
+<li><a href="https://www.lematin.ch/story/hamilton-et-verstappen-saccrochent-ricciardo-lemporte-656459398007">Automobilisme : Hamilton et Verstappen s’accrochent, Ricciardo l’emporte</a> – lematin.ch</li>
+<li><a href="https://www.20min.ch/fr/story/hamilton-et-verstappen-saccrochent-ricciardo-lemporte-656459398007">Automobilisme : Hamilton et Verstappen s’accrochent, Ricciardo l’emporte</a> – 20 Minutes</li>
+<li><a href="https://www.20min.ch/fr/story/faudra-t-il-un-certificat-covid-pour-aller-skier-cet-hiver-696089773453">Coronavirus : Faudra-t-il un certificat Covid pour aller skier cet hiver?</a> – 20 Minutes</li>
+<li><a href="https://www.rfj.ch/rfj/Sport/Sports-motorises/Monza-Ricciardo-s-impose-devant-Norris-lors-du-GP-d-Italie.html">Monza: Ricciardo s'impose devant Norris lors du GP d'Italie</a> – RFJ</li>
+<li><a href="https://www.rts.ch/sport/mecanises/auto/12485728-f1-verstappen-et-hamilton-saccrochent-ricciardo-en-profite.html">F1: Ricciardo triomphe à Monza, Verstappen et Hamilton s'accrochent</a> – RTS.ch</li>
+<li><a href="https://www.20min.ch/fr/story/servette-reussit-un-recital-contre-saint-gall-123352649025">Football : Servette réussit un récital contre Saint-Gall</a> – 20 Minutes</li>
+<li><a href="https://www.20min.ch/fr/story/la-fin-des-aides-aux-entreprises-serait-proche-250665578648">Covid-19 : La fin des aides aux entreprises serait proche</a> – 20 Minutes</li>
+<li><a href="https://www.rts.ch/info/monde/12485755-le-pape-francois-rencontre-viktor-orban-et-denonce-lantisemitisme-en-europe.html">Le pape François rencontre Viktor Orban et dénonce l'antisémitisme en Europe</a> – RTS.ch</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-13">Lundi 13 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-13" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #25 day in terms of visits.<br/>
+This was our #28 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.radiolac.ch/actualite/qualifications-trois-nouvelles-journees-debut-octobre/">Qualifications: Trois nouvelles journées début octobre</a> – radiolac.ch</li>
+<li><a href="https://www.nicematin.com/index.php/technologie/une-entreprise-americaine-veut-recreer-une-espece-de-mammouths-grace-a-la-genetique-714106">Une entreprise américaine veut recréer une espèce de mammouths grâce à la génétique</a> – Nice-Matin</li>
+<li><a href="https://www.france24.com/fr/info-en-continu/20210913-une-entreprise-am%C3%A9ricaine-se-donne-pour-mission-de-recr%C3%A9er-des-mammouths-laineux">Une entreprise américaine se donne pour mission de recréer des mammouths laineux</a> – FRANCE 24</li>
+<li><a href="https://www.20min.ch/fr/story/penurie-de-jouets-annoncee-sous-le-sapin-212575191229">Fêtes de fin d’année</a> – 20 Minutes</li>
+<li><a href="https://www.rts.ch/info/monde/12487992-debut-du-proces-dalexandre-benalla-excollaborateur-demmanuel-macron-aux-agissements-troubles.html">Début du procès d'Alexandre Benalla, ex-collaborateur d'Emmanuel Macron aux agissements troubles</a> – RTS.ch</li>
+<li><a href="https://www.lematin.ch/story/apres-son-vol-le-cur-de-la-ville-a-retrouve-son-socle-213958200712">Jura : Après son vol, le «cœur de la ville» a retrouvé son socle</a> – lematin.ch</li>
+<li><a href="https://www.20min.ch/fr/story/un-politicien-part-en-croisade-contre-un-index-leve-748659885264">Berne : Un politicien part en croisade contre un index levé</a> – 20 Minutes</li>
+<li><a href="https://www.lematin.ch/story/forte-hausse-plus-50-000-vaccinations-en-trois-jours-en-suisse-733858380278">plus de 50 000 vaccinations en trois jours en Suisse - Le Matin</a> – lematin.ch</li>
+<li><a href="https://www.lematin.ch/story/larc-de-triomphe-devient-un-paquet-cadeau-sous-les-yeux-des-parisiens-893578696819">Gigantesque : L’Arc de Triomphe devient un paquet-cadeau sous les yeux des Parisiens</a> – lematin.ch</li>
+<li><a href="https://www.rfj.ch/rfj/Actualite/Suisse/L-extension-du-certificat-Covid-plutot-bien-accueillie.html">L'extension du certificat Covid plutôt bien accueillie</a> – RFJ</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-14">Mardi 14 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-14" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #8 day in terms of visits.<br/>
+This was our #26 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.lematin.ch/story/le-plus-haut-grade-americain-craignait-que-donald-trump-nattaque-la-chine-696714850605">États-Unis : Le plus haut gradé américain craignait que Donald Trump n’attaque la Chine</a> – lematin.ch</li>
+<li><a href="https://www.20min.ch/fr/story/limmobilier-de-luxe-senvole-une-villa-vendue-60-millions-141373736785">une villa vendue 60 millions - 20 minutes</a> – 20 Minutes</li>
+<li><a href="https://www.lematin.ch/story/ajoie-abasourdi-par-leclair-luganais-505374389951">Hockey sur glace : Ajoie abasourdi par l’éclair luganais</a> – lematin.ch</li>
+<li><a href="https://www.rjb.ch/rjb/Actualite/Culture/Journee-d-hommage-au-chanteur-Johnny-Hallyday.html">Journée d'hommage au chanteur Johnny Hallyday</a> – RJB</li>
+<li><a href="https://www.rfj.ch/rfj/Sport/Hockey/20210914-Le-HC-Ajoie-n-a-pas-pu-lutter-face-a-Lugano.html">Le HC Ajoie étouffé par Lugano</a> – RFJ</li>
+<li><a href="https://www.pesesurstart.com/2021/09/14/evenement-apple-lancement-des-nouveaux-ipad-ipad-mini-et-du-systeme-ipados-15-1">Événement Apple: lancement des nouveaux iPad, iPad mini et du système iPadOS 15</a> – Pèse sur start</li>
+<li><a href="https://www.lematin.ch/story/apple-annonce-la-gamme-iphone-13-513943344624">Technologies : Apple annonce la gamme IPhone 13</a> – lematin.ch</li>
+<li><a href="https://www.20min.ch/fr/story/trafic-danguilles-trois-chinois-condamnes-398759922863">trois Chinois condamnés - 20 minutes</a> – 20 Minutes</li>
+<li><a href="https://www.rts.ch/sport/football/12492346-ligue-des-champions-yb-renverse-manchester-united.html">Ligue des champions: YB renverse Manchester United!</a> – RTS.ch</li>
+<li><a href="https://www.lfm.ch/actualite/suisse/romandie/vaud/vaud-renforce-son-dispositif-de-lutte-contre-le-trafic-de-drogue/">Trafic de drogue: "La répression ne suffit pas"</a> – lfm.ch</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-15">Mercredi 15 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-15" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #3 day in terms of visits.<br/>
+This was our #12 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.20min.ch/fr/story/la-suspension-de-labonnement-doit-etre-proposee-sans-frais-695358542593">Salles de sport : «La suspension de l’abonnement doit être proposée sans frais»</a> – 20 Minutes</li>
+<li><a href="https://www.rfj.ch/rfj/Actualite/Monde/Boris-Johnson-remercie-son-chef-de-la-diplomatie.html">Boris Johnson remercie son chef de la diplomatie</a> – RFJ</li>
+<li><a href="https://www.20min.ch/fr/story/il-avait-menace-alain-berset-il-perd-son-job-963322399393">Nidwald : Il avait menacé Alain Berset. Il perd son job</a> – 20 Minutes</li>
+<li><a href="https://www.lematin.ch/story/decollage-imminent-pour-les-premiers-touristes-spatiaux-de-spacex-650868428483">Exploration spatiale : Décollage imminent pour les premiers touristes spatiaux de SpaceX</a> – lematin.ch</li>
+<li><a href="https://www.lematin.ch/story/proces-de-cheyres-prison-a-vie-pour-le-tueur-de-samantha-439132240573">prison à vie pour le tueur de Samantha - Le Matin</a> – lematin.ch</li>
+<li><a href="https://www.lematin.ch/story/marc-hirschi-prend-les-renes-du-tour-du-luxembourg-504136888656">Cyclisme : Marc Hirschi prend les rênes du Tour du Luxembourg</a> – lematin.ch</li>
+<li><a href="https://www.20min.ch/fr/story/loups-dans-le-jura-vaudois-jacqueline-de-quattro-interpelle-berne-257003645871">Jacqueline de Quattro interpelle Berne - 20 minutes</a> – 20 Minutes</li>
+<li><a href="https://www.lfm.ch/actualite/suisse/oel-pool-reprend-le-reseau-de-stations-service-de-bp-en-suisse/">Oel-Pool reprend le réseau de stations-service de BP en Suisse</a> – lfm.ch</li>
+<li><a href="https://www.rtn.ch/rtn/Actualite/economie/On-se-prepare-a-une-entree-en-fanfare-a-Wall-Street.html">On se prépare à une entrée en fanfare à Wall Street</a> – RTN</li>
+<li><a href="https://www.lematin.ch/story/on-a-attaque-la-france-mais-il-ny-avait-rien-de-personnel-910612015528">Attentats du 13 novembre</a> – lematin.ch</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-16">Jeudi 16 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-16" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #1 day in terms of visits.<br/>
+This was our #2 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.lematin.ch/story/les-etats-unis-tentent-dapaiser-la-colere-de-la-france-415229452317">Affaire des sous-marins : Les États-Unis tentent d’apaiser la colère de la France</a> – lematin.ch</li>
+<li><a href="https://www.rts.ch/info/monde/12497772-colere-en-france-apres-la-rupture-par-laustralie-dun-enorme-contrat-darmement.html">Colère en France après la rupture par l'Australie d'un énorme contrat d'armement</a> – RTS.ch</li>
+<li><a href="https://www.20min.ch/fr/story/nous-naurons-plus-de-pays-dans-trois-ans-799123888094">Donald Trump prédit la fin des Etats-Unis dans trois ans</a> – 20 Minutes</li>
+<li><a href="https://www.lematin.ch/story/le-seul-bruit-cetait-les-portables-des-victimes-qui-sonnaient-384155067224">Attentats du 13 novembre</a> – lematin.ch</li>
+<li><a href="https://www.lunion.fr/id293726/article/2021-09-16/une-sonate-de-mozart-pour-mettre-lepilepsie-en-sourdine">Une sonate de Mozart pour mettre l’épilepsie en sourdine</a> – L'Union</li>
+<li><a href="https://www.rfj.ch/rfj/Sport/Tennis/Bencic-sans-encombres-en-quarts-a-Luxembourg.html">Bencic sans encombres en quarts à Luxembourg</a> – RFJ</li>
+<li><a href="https://www.rts.ch/sport/tennis/12497537-tennis-bencic-passe-en-quarts-sans-souci-a-luxembourg.html">Tennis: Bencic passe en quarts sans souci à Luxembourg</a> – RTS.ch</li>
+<li><a href="https://www.rts.ch/info/monde/12497772-la-france-en-colere-apres-la-rupture-par-laustralie-dun-enorme-contrat-darmement.html">La France en colère après la rupture par l'Australie d'un énorme contrat d'armement</a> – RTS.ch</li>
+<li><a href="https://www.rts.ch/info/regions/geneve/12497311-budget-cantonal-genevois-2022-deficitaire-malgre-une-hausse-des-revenus.html">Budget cantonal genevois 2022 rouge vif, malgré une hausse des revenus</a> – RTS.ch</li>
+<li><a href="https://www.rts.ch/info/regions/geneve/12497311-budget-cantonal-genevois-2022-deficitaire-malgre-une-hausse-des-revenus.html?rts_source=rss_t">Budget cantonal genevois 2022 rouge vif, malgré une hausse des revenus</a> – RTS.ch</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-17">Vendredi 17 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-17" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #16 day in terms of visits.<br/>
+This was our #25 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.lematin.ch/story/abdelaziz-bouteflika-un-accro-du-pouvoir-chasse-par-la-rue-535888779917">Algérie : Abdelaziz Bouteflika, un accro du pouvoir chassé par la rue</a> – lematin.ch</li>
+<li><a href="https://www.lfm.ch/actualite/international/minage-de-bitcoin-30700-tonnes-de-dechets-electroniques-en-un-an/">Minage de bitcoin: 30'700 tonnes de déchets électroniques en un an</a> – lfm.ch</li>
+<li><a href="https://www.rts.ch/info/monde/12501253-paris-rappelle-ses-ambassadeurs-aux-etatsunis-et-en-australie-apres-la-crise-des-sousmarins.html">Paris rappelle ses ambassadeurs aux Etats-Unis et en Australie après la crise des sous-marins</a> – RTS.ch</li>
+<li><a href="https://www.rts.ch/info/monde/12501253-paris-rappelle-ses-ambassadeurs-aux-etats-unis-et-en-australie-apres-la-crise-des-sous-marins.html?rts_source=rss_t">Paris rappelle ses ambassadeurs aux Etats-Unis et en Australie après la crise des sous-marins</a> – RTS.ch</li>
+<li><a href="https://www.rfj.ch/rfj/Sport/Hockey/Beau-succes-de-Bienne-a-Lugano.html">Beau succès de Bienne à Lugano</a> – RFJ</li>
+<li><a href="https://www.rts.ch/info/monde/12501115-la-derniere-frappe-americaine-a-kaboul-etait-une-erreur-tragique.html">La dernière frappe américaine à Kaboul était une "erreur tragique"</a> – RTS.ch</li>
+<li><a href="https://www.rts.ch/sport/football/12500383-coupe-de-suisse-lausanne-se-fait-peur-a-bulle-servette-assure-xamax-trebuche.html">Coupe de Suisse: Lausanne se fait peur à Bulle, Servette assure, Xamax trébuche</a> – RTS.ch</li>
+<li><a href="https://www.lematin.ch/story/larmee-us-admet-que-sa-frappe-a-kaboul-etait-une-erreur-tragique-604733117514">Afghanistan : L’armée US admet que sa frappe à Kaboul était «une erreur tragique»</a> – lematin.ch</li>
+<li><a href="https://www.lavoixdunord.fr/1071113/article/2021-09-17/les-touristes-de-spacex-ont-discute-avec-tom-cruise-depuis-l-espace?from_direct=true">Les touristes de SpaceX ont discuté avec Tom Cruise depuis l’espace</a> – La Voix du Nord</li>
+<li><a href="https://www.varmatin.com/technologie/a-quoi-ressemble-la-vie-dans-l-espace-pour-les-touristes-de-spacex-714978">A quoi ressemble la vie dans l'espace pour les touristes de SpaceX?</a> – Var-Matin</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-18">Samedi 18 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-18" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #21 day in terms of visits.<br/>
+This was our #17 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.lfm.ch/actualite/international/les-quatre-touristes-spatiaux-ont-amerri-au-large-de-la-floride/">Les quatre touristes spatiaux ont amerri au large de la Floride</a> – lfm.ch</li>
+<li><a href="https://www.lematin.ch/story/les-quatre-passagers-de-spacex-de-retour-sur-terre-645520349370">Espace : Les quatre touristes spatiaux de SpaceX de retour sur Terre</a> – lematin.ch</li>
+<li><a href="https://www.20min.ch/fr/story/le-groupe-etat-islamique-revendique-lattaque-dun-gazoduc-584775330072">Syrie : Le groupe État islamique revendique l’attaque d’un gazoduc</a> – 20 Minutes</li>
+<li><a href="https://www.20min.ch/fr/story/enfants-et-parents-metamorphoses-en-eboueurs-dun-jour-592475473877">Genève : Enfants et parents métamorphosés en éboueurs d’un jour</a> – 20 Minutes</li>
+<li><a href="https://www.lematin.ch/story/le-ps-confirme-olivier-faure-a-sa-tete-et-met-le-cap-sur-2022-605919347760">France : Le PS confirme Olivier Faure à sa tête et met le cap sur 2022</a> – lematin.ch</li>
+<li><a href="https://www.rjb.ch/rjb/Sports/Hockey/20210918-Qui-peut-battre-le-HC-Bienne.html">Qui peut battre le HC Bienne ?</a> – RJB</li>
+<li><a href="https://www.lematin.ch/story/paris-evoque-un-mensonge-et-une-crise-grave-404270824884">Sous-marins : Paris évoque un «mensonge» et une «crise grave»</a> – lematin.ch</li>
+<li><a href="https://www.rts.ch/sport/football/12502641-coupe-de-suisse-le-fc-sion-prend-une-lecon-carouge-sort-winterthour.html">Coupe de Suisse: le FC Sion prend une leçon, Carouge sort Winterthour</a> – RTS.ch</li>
+<li><a href="https://www.20min.ch/fr/story/pressions-pour-avoir-un-vaccin-alternatif-436935434158">Coronavirus en Suisse : Pressions pour avoir un vaccin alternatif</a> – 20 Minutes</li>
+<li><a href="https://www.rts.ch/sport/football/12502641-coupe-de-suisse-le-fc-sion-prend-une-lecon-a-la-pontaise.html">Coupe de Suisse: le FC Sion prend une leçon à la Pontaise</a> – RTS.ch</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-19">Dimanche 19 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-19" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #10 day in terms of visits.<br/>
+This was our #9 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.rtn.ch/rtn/Actualite/economie/Eruption-volcanique-dans-l-archipel-des-Canaries.html">Eruption volcanique dans l'archipel des Canaries</a> – RTN</li>
+<li><a href="https://www.20min.ch/fr/story/un-corps-correspondant-a-gabrielle-petito-retrouve-au-wyoming-569042658372">États-Unis : Un corps, correspondant à Gabrielle Petito, retrouvé au Wyoming</a> – 20 Minutes</li>
+<li><a href="https://www.lematin.ch/story/un-corps-correspondant-a-gabrielle-petito-retrouve-au-wyoming-569042658372">États-Unis : Un corps, correspondant à Gabrielle Petito, retrouvé au Wyoming</a> – lematin.ch</li>
+<li><a href="https://www.20min.ch/fr/story/olaf-scholz-reste-le-favori-pour-succeder-a-angela-merkel-612899501480">Allemagne : Olaf Scholz reste le favori pour succéder à Angela Merkel</a> – 20 Minutes</li>
+<li><a href="https://www.20min.ch/fr/story/la-roma-de-mourinho-chute-pour-la-premiere-fois-564530474515">Football : La Roma de Mourinho chute pour la première fois</a> – 20 Minutes</li>
+<li><a href="https://www.rts.ch/info/monde/12504362-le-parti-de-vladimir-poutine-va-remporter-les-legislatives-russes.html">Le parti de Vladimir Poutine va remporter les législatives russes</a> – RTS.ch</li>
+<li><a href="https://www.rts.ch/info/monde/12503650-laustralie-dement-avoir-cache-a-la-france-sa-volonte-de-renoncer-a-ses-sousmarins.html">L'Australie dément avoir caché à la France sa volonté de renoncer à ses sous-marins</a> – RTS.ch</li>
+<li><a href="https://www.20min.ch/fr/story/une-rencontre-entre-ministres-de-la-defense-francais-et-anglais-annulee-227837584748">Crise des sous-marins : Une rencontre entre ministres de la Défense français et anglais annulée</a> – 20 Minutes</li>
+<li><a href="https://www.rjb.ch/rjb/Sports/Football/Un-de-chute-pour-la-Roma-de-Mourinho.html">Un de chute pour la Roma de Mourinho</a> – RJB</li>
+<li><a href="https://www.rfj.ch/rfj/Sport/Football/Un-de-chute-pour-la-Roma-de-Mourinho.html">Un de chute pour la Roma de Mourinho</a> – RFJ</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-20">Lundi 20 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-20" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #17 day in terms of visits.<br/>
+This was our #14 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.radiolac.ch/actualite/suisse/la-suisse-reste-premiere-pour-linnovation-selon-lonu/">La Suisse reste première pour l'innovation selon l'ONU</a> – radiolac.ch</li>
+<li><a href="https://www.rts.ch/info/culture/livres/12507173-lecrivain-journaliste-et-editeur-roland-jaccard-est-decede.html">L'écrivain, journaliste et éditeur Roland Jaccard est décédé</a> – RTS.ch</li>
+<li><a href="https://www.lesechos.fr/industrie-services/services-conseils/la-france-se-rapproche-du-top-10-mondial-des-pays-les-plus-innovants-1347772">La France se rapproche du Top 10 mondial des pays les plus innovants</a> – Les Échos</li>
+<li><a href="https://www.lematin.ch/story/le-conseil-des-etats-veut-a-son-tour-faciliter-le-don-dorganes-324268298061">les Etats misent aussi sur le consentement présumé - Le Matin</a> – lematin.ch</li>
+<li><a href="https://www.rfj.ch/rfj/Sport/Cyclisme/Mondiaux-Marlen-Reusser-2e-du-contre-la-montre.html">Mondiaux: Marlen Reusser 2e du contre-la-montre</a> – RFJ</li>
+<li><a href="https://www.lfm.ch/actualite/sport/mondiaux-marlen-reusser-2e-du-contre-la-montre/">Mondiaux: Marlen Reusser 2e du contre-la-montre</a> – lfm.ch</li>
+<li><a href="https://www.20min.ch/fr/story/une-maison-de-retraite-hackee-donnees-dans-la-nature-268121300353">données dans la nature - 20 minutes</a> – 20 Minutes</li>
+<li><a href="https://www.presse-citron.net/le-clavier-virtuel-de-la-nouvelle-apple-watch-a-t-il-ete-vole-par-apple/">Le clavier virtuel de la nouvelle Apple Watch a-t-il été "volé" par Apple ?</a> – Presse-citron</li>
+<li><a href="https://www.rfj.ch/rfj/Actualite/Monde/Rwanda-le-heros-de-Hotel-Rwanda-reconnu-coupable-de-terrorisme.html">Rwanda: le héros de " Hotel Rwanda " reconnu coupable de " terrorisme "</a> – RFJ</li>
+<li><a href="https://www.20min.ch/fr/story/le-partenariat-avec-lepfl-entre-dans-une-phase-concrete-581645928173">Valais : Le partenariat avec l’EPFL entre dans une phase concrète</a> – 20 Minutes</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-21">Mardi 21 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-21" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #7 day in terms of visits.<br/>
+This was our #7 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.radiolac.ch/actualite/roues-de-velo-pour-geneve-servette-et-ajoie/">Roues de vélo pour Genève-Servette et Ajoie</a> – radiolac.ch</li>
+<li><a href="https://www.rfj.ch/rfj/Sport/Hockey/Lausanne-se-reprend-Fribourg-battu-pour-la-4e-fois-de-suite.html">Lausanne se reprend, Fribourg battu pour la 4e fois de suite</a> – RFJ</li>
+<li><a href="https://www.lfm.ch/actualite/suisse/romandie/lausanne-se-reprend-fribourg-battu-pour-la-4e-fois-de-suite/">Lausanne se reprend, Fribourg battu pour la 4e fois de suite</a> – lfm.ch</li>
+<li><a href="https://45secondes.fr/le-rover-lunaire-viper-de-la-nasa-atterrira-au-bord-du-cratere-nobile-au-pole-sud-de-la-lune/">Le rover lunaire VIPER de la NASA atterrira au bord du cratère Nobile au pôle Sud de la Lune</a> – 45 Secondes</li>
+<li><a href="https://www.lematin.ch/story/democrates-et-republicains-critiquent-biden-a-lunisson-819605941786">Expulsions "ignobles" de migrants</a> – lematin.ch</li>
+<li><a href="https://www.20min.ch/fr/story/relation-houleuse-entre-une-fille-et-son-pere-mythomane-892732907835">sortie ciné: "flag day"</a> – 20 Minutes</li>
+<li><a href="https://www.20min.ch/fr/story/les-freres-et-surs-heritent-des-caries-du-premier-608131179630">Santé : Les frères et sœurs «héritent» des caries du premier</a> – 20 Minutes</li>
+<li><a href="https://www.lematin.ch/story/un-scenario-a-la-lehman-brothers-peu-probable-300420546285">Crise d’Evergrande : Un scénario à la «Lehman Brothers» peu probable</a> – lematin.ch</li>
+<li><a href="https://www.20min.ch/fr/story/un-scenario-a-la-lehman-brothers-peu-probable-300420546285">Crise d’Evergrande : Un scénario à la «Lehman Brothers» peu probable</a> – 20 Minutes</li>
+<li><a href="https://www.rjb.ch/rjb/Actualite/Monde/J-ai-attendu-cela-toute-ma-vie-lancement-d-une-ligne-de-soutien-aux-victimes-d-abus.html">" J'ai attendu cela toute ma vie ": lancement d'une ligne de soutien aux victimes d'abus</a> – RJB</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-22">Mercredi 22 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-22" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #19 day in terms of visits.<br/>
+This was our #16 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.20min.ch/fr/story/britney-spears-demande-la-fin-de-la-tutelle-paternelle-pour-se-marier-953583312435">États-Unis : Britney Spears demande la fin de la tutelle paternelle pour se marier</a> – 20 Minutes</li>
+<li><a href="https://www.20min.ch/fr/story/exaspere-par-les-nuisances-il-tire-a-la-fronde-dans-la-rue-273542229869">Genève : Exaspéré par les nuisances, il tire à la fronde dans la rue</a> – 20 Minutes</li>
+<li><a href="https://www.lematin.ch/story/ca-ma-coute-cher-mais-je-ne-regrette-absolument-pas-556157428255">Procès Benalla : «Ça m’a coûté cher, mais je ne regrette absolument pas»</a> – lematin.ch</li>
+<li><a href="https://www.lematin.ch/story/laccuse-campe-sur-sa-position-et-clame-son-innocence-882173673841">Drame de Sullens (VD)</a> – lematin.ch</li>
+<li><a href="https://www.20min.ch/fr/story/une-brochure-sur-la-democratie-snobe-les-femmes-711611815368">Berne : Une brochure sur la démocratie «snobe» les femmes</a> – 20 Minutes</li>
+<li><a href="https://www.lematin.ch/story/cest-bien-le-covid-qui-a-tue-leventreur-du-yorkshire-867394154017">Grande-Bretagne : C’est bien le Covid qui a tué l’Éventreur du Yorkshire</a> – lematin.ch</li>
+<li><a href="https://gamergen.com/actualites/world-war-3-nouvelle-version-annoncee-bientot-alpha-veterans-early-access-323724-1">World War 3 : une nouvelle version annoncée, bientôt en alpha pour les vétérans de l'Early Access</a> – GAMERGEN.COM</li>
+<li><a href="https://www.lematin.ch/story/elmarie-myburgh-unique-profileuse-en-pays-violent-294004596158">Afrique du Sud : Elmarie Myburgh, unique profileuse en pays violent</a> – lematin.ch</li>
+<li><a href="https://www.lematin.ch/story/le-national-veut-une-assurance-innovante-contre-un-seisme-majeur-820404060278">Session : Le National veut une assurance «innovante» contre un séisme majeur</a> – lematin.ch</li>
+<li><a href="https://www.lematin.ch/story/jamais-je-ne-mangerai-mes-amis-120608415604">Lauriane Gilliéron : «Jamais je ne mangerai mes amis!»</a> – lematin.ch</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-23">Jeudi 23 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-23" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #23 day in terms of visits.<br/>
+This was our #21 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.lematin.ch/story/le-leader-independantiste-carles-puigdemont-arrete-en-italie-474767339446">Espagne : Le leader indépendantiste Carles Puigdemont arrêté en Italie</a> – lematin.ch</li>
+<li><a href="https://www.radiolac.ch/sport/football/sion-laisse-filer-deux-points-contre-lucerne/">Sion laisse filer deux points contre Lucerne</a> – radiolac.ch</li>
+<li><a href="https://www.rts.ch/sport/tennis/12514277-wta-ostrava-bencic-et-teichmann-se-qualifient-pour-les-quarts-de-finale.html">WTA Ostrava: Bencic et Teichmann se qualifient pour les quarts de finale</a> – RTS.ch</li>
+<li><a href="https://www.rts.ch/info/regions/berne/12515418-la-police-repousse-des-opposants-aux-mesures-covid-autour-du-palais-federal.html">La police repousse des opposants aux mesures Covid autour du Palais fédéral</a> – RTS.ch</li>
+<li><a href="https://www.20min.ch/fr/story/letat-interpelle-pour-legiferer-sur-les-arriere-plans-en-visio-261202810988">Vaud : L’État interpellé pour légiférer sur les arrière-plans en visio</a> – 20 Minutes</li>
+<li><a href="https://www.rjb.ch/rjb/Actualite/Culture/Ouverture-du-17e-Zurich-Film-Festival-en-presence-de-Guy-Parmelin.html">Ouverture du 17e Zurich Film Festival en présence de Guy Parmelin</a> – RJB</li>
+<li><a href="https://www.20min.ch/fr/story/les-gens-se-font-pieger-par-des-zones-30-illegales-578317155689">Genève : «Les gens se font piéger par des zones 30 illégales»</a> – 20 Minutes</li>
+<li><a href="https://www.lematin.ch/story/lune-des-coulees-de-lave-du-cumbre-vieja-navance-plus-541992516847">L’une des coulées de lave du Cumbre Vieja n’avance plus</a> – lematin.ch</li>
+<li><a href="https://www.20min.ch/fr/story/rihanna-est-effrayee-par-son-succes-314899359423">Rihanna est effrayée par son succès</a> – 20 Minutes</li>
+<li><a href="https://www.rts.ch/info/regions/berne/12515418-la-place-federale-sous-tension-avant-des-rassemblements-antimesures-covid.html">La place fédérale sous tension avant des rassemblements anti-mesures Covid</a> – RTS.ch</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-24">Vendredi 24 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-24" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #20 day in terms of visits.<br/>
+This was our #10 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.rtn.ch/rtn/Actualite/economie/Cadre-de-Huawei-liberee-a-Vancouver-apres-un-accord-avec-la-justice.html">Cadre de Huawei libérée à Vancouver après un accord avec la justice</a> – RTN</li>
+<li><a href="https://www.lfm.ch/actualite/suisse/fribourg-enfonce-geneve-lexploit-dajoie/">Fribourg enfonce Genève, l'exploit d'Ajoie</a> – lfm.ch</li>
+<li><a href="https://www.lematin.ch/story/ajoie-soffre-le-champion-en-titre-106664129440">Hockey : Ajoie s’offre le champion en titre!</a> – lematin.ch</li>
+<li><a href="https://www.20min.ch/fr/story/le-meurtrier-condamne-a-30-ans-de-reclusion-en-appel-795080151711">Drame de Sullens (VD)</a> – 20 Minutes</li>
+<li><a href="https://www.lematin.ch/story/les-gaz-du-volcan-des-canaries-devraient-epargner-la-suisse-210229423822">Éruption : Les gaz du volcan des Canaries devraient épargner la Suisse</a> – lematin.ch</li>
+<li><a href="https://www.lematin.ch/story/les-agents-a-cheval-qui-ont-maltraite-des-migrants-vont-payer-dit-biden-419933921063">États-Unis : Les agents à cheval qui ont maltraité des migrants vont «payer», dit Biden</a> – lematin.ch</li>
+<li><a href="https://www.20min.ch/fr/story/merkel-appelle-a-voter-laschet-le-candidat-de-son-parti-525675221327">Allemagne : Merkel appelle à voter Laschet, le candidat de son parti</a> – 20 Minutes</li>
+<li><a href="https://www.lematin.ch/story/merkel-appelle-a-voter-laschet-le-candidat-de-son-parti-525675221327">Allemagne : Merkel appelle à voter Laschet, le candidat de son parti</a> – lematin.ch</li>
+<li><a href="https://www.lematin.ch/story/lavocat-general-a-requis-30-ans-de-reclusion-en-appel-396621308895">Drame de Sullens (VD)</a> – lematin.ch</li>
+<li><a href="https://www.lematin.ch/story/priorite-aux-vaccines-aux-soins-intensifs-164893269191">Pandémie : Priorité aux vaccinés aux soins intensifs?</a> – lematin.ch</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-25">Samedi 25 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-25" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #29 day in terms of visits.<br/>
+This was our #22 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.lematin.ch/story/marc-hirschi-ma-premiere-victoire-de-l-annee-m-a-fait-du-bien-838320646221">"Ma première victoire de l'année m'a fait du bien" - Le Matin</a> – lematin.ch</li>
+<li><a href="https://www.lematin.ch/story/londres-va-accorder-10500-visas-face-aux-penuries-de-main-duvre-116812691522">Royaume-Uni : Londres va accorder 10’500 visas face aux pénuries de main-d’œuvre</a> – lematin.ch</li>
+<li><a href="https://www.20min.ch/fr/story/londres-va-accorder-10500-visas-face-aux-penuries-de-main-duvre-116812691522">Royaume-Uni : Londres va accorder 10’500 visas face aux pénuries de main-d’œuvre</a> – 20 Minutes</li>
+<li><a href="https://www.rts.ch/sport/hockey/12519419-national-league-geneveservette-renoue-avec-la-victoire.html">National League: Genève-Servette renoue avec la victoire</a> – RTS.ch</li>
+<li><a href="https://www.20min.ch/fr/story/les-americains-ecrasent-la-ryder-cup-917400701105">Golf : Les Américains écrasent la Ryder Cup</a> – 20 Minutes</li>
+<li><a href="https://www.lematin.ch/story/les-americains-ecrasent-la-ryder-cup-917400701105">Golf : Les Américains écrasent la Ryder Cup</a> – lematin.ch</li>
+<li><a href="https://www.rts.ch/sport/golf/12519481-golf-les-americains-accentuent-leur-avance.html">Golf: les Américains accentuent leur avance</a> – RTS.ch</li>
+<li><a href="https://www.rfj.ch/rfj/Actualite/Suisse/Rassemblement-a-Lausanne-pour-defendre-le-droit-a-manifester.html">Rassemblement à Lausanne pour défendre le droit à manifester</a> – RFJ</li>
+<li><a href="https://www.20min.ch/fr/story/les-petits-colis-bientot-soumis-a-la-tva-leur-prix-devrait-augmenter-102025444044">Wish, Amazon, Ebay… : Les petits colis bientôt soumis à la TVA, leur prix devrait augmenter</a> – 20 Minutes</li>
+<li><a href="https://www.lematin.ch/story/les-deux-canadiens-liberes-de-chine-ont-atterri-au-canada-352258358303">Justice : Les deux Canadiens libérés de Chine ont atterri au Canada</a> – lematin.ch</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-26">Dimanche 26 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-26" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #27 day in terms of visits.<br/>
+This was our #29 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.20min.ch/fr/story/une-attaque-de-dissidents-presumes-des-farc-fait-5-morts-321359218774">Colombie : Une attaque de dissidents présumés des Farc fait 5 morts</a> – 20 Minutes</li>
+<li><a href="https://www.lematin.ch/story/une-attaque-de-dissidents-presumes-des-farc-fait-5-morts-321359218774">Colombie : Une attaque de dissidents présumés des Farc fait 5 morts</a> – lematin.ch</li>
+<li><a href="https://www.lematin.ch/story/les-socialistes-en-danger-a-lisbonne-643921548227">Municipales au Portugal : Les socialistes en danger à Lisbonne</a> – lematin.ch</li>
+<li><a href="https://www.lematin.ch/story/27e-victoire-des-americains-dans-la-ryder-cup-499493384865">Golf : 27e victoire des Américains dans la Ryder Cup</a> – lematin.ch</li>
+<li><a href="https://www.rts.ch/info/monde/12520425-les-femmes-ne-sont-plus-majoritaires-au-parlement-islandais-apres-un-recomptage.html">Les femmes ne sont plus majoritaires au Parlement islandais après un recomptage</a> – RTS.ch</li>
+<li><a href="https://www.rts.ch/info/monde/12521135-regain-de-tensions-entre-la-serbie-et-le-kosovo-sur-fond-de-plaques-dimmatriculation.html">Regain de tensions entre la Serbie et le Kosovo, sur fond de plaques d'immatriculation</a> – RTS.ch</li>
+<li><a href="https://www.rts.ch/info/suisse/12521042-linitiative-99-des-jeunes-socialistes-loin-du-compte-avec-35-des-voix.html">L'initiative 99% des Jeunes socialistes loin du compte avec 35% des voix</a> – RTS.ch</li>
+<li><a href="https://www.lematin.ch/story/laver-cup-leurope-ecrase-le-reste-du-monde-772515335737">l’Europe écrase le reste du monde - Le Matin</a> – lematin.ch</li>
+<li><a href="https://www.radiolac.ch/actualite/leurope-proche-dune-4e-victoire-consecutive/">L'Europe remporte une 4e victoire consécutive à la Laver Cup</a> – radiolac.ch</li>
+<li><a href="https://www.radiolac.ch/sport/football/arsenal-gagne-xhaka-blesse/">Arsenal gagne, Xhaka blessé</a> – radiolac.ch</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-27">Lundi 27 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-27" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #14 day in terms of visits.<br/>
+This was our #13 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.rjb.ch/rjb/Sport/Football/L-UEFA-annule-toutes-ses-sanctions-contre-les-12-clubs-mutins.html">L'UEFA annule toutes ses sanctions contre les 12 clubs mutins</a> – RJB</li>
+<li><a href="https://www.lfm.ch/actualite/international/luefa-annule-toutes-ses-sanctions-contre-les-12-clubs-mutins/">L'UEFA annule toutes ses sanctions contre les 12 clubs mutins</a> – lfm.ch</li>
+<li><a href="https://www.rfj.ch/rfj/Actualite/Monde/Le-chanteur-americain-R-Kelly-reconnu-coupable-de-crimes-sexuels.html">Le chanteur américain R. Kelly reconnu coupable de crimes sexuels</a> – RFJ</li>
+<li><a href="https://www.20min.ch/fr/story/la-planification-hospitaliere-annulee-par-le-tribunal-federal-406987769486">Canton de Neuchâtel : La planification hospitalière annulée par le Tribunal fédéral</a> – 20 Minutes</li>
+<li><a href="https://www.lematin.ch/story/nouveau-barrage-a-lenquete-sur-lexplosion-au-port-de-beyrouth-314965911020">Liban : Nouveau barrage à l’enquête sur l’explosion au port de Beyrouth</a> – lematin.ch</li>
+<li><a href="https://www.rts.ch/info/monde/12522823-joe-biden-a-recu-une-troisieme-dose-de-vaccin-le-suivi-du-covid19-dans-le-monde.html">Joe Biden a reçu une troisième dose de vaccin - Le suivi du Covid-19 dans le monde</a> – RTS.ch</li>
+<li><a href="https://www.lematin.ch/story/la-chine-presque-disqualifiee-768030633816">Hockey sur glace : La Chine presque disqualifiée</a> – lematin.ch</li>
+<li><a href="https://www.20min.ch/fr/story/lancienne-lanterne-rouge-se-retrouve-sur-le-toit-du-monde-688631427987">E-sport : L’ancienne lanterne rouge se retrouve sur le toit du monde</a> – 20 Minutes</li>
+<li><a href="https://www.rts.ch/info/monde/12524679-podcast-pma-le-sperme-vatil-manquer.html">Podcast - PMA: le sperme va-t-il manquer?</a> – RTS.ch</li>
+<li><a href="https://www.20min.ch/fr/story/les-syndicats-satisfaits-du-salaire-minimum-714657114177">Genève : Les syndicats satisfaits du salaire minimum</a> – 20 Minutes</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-28">Mardi 28 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-28" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #2 day in terms of visits.<br/>
+This was our #1 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.lematin.ch/story/la-lave-du-volcan-en-eruption-a-atteint-locean-aux-canaries-869194524953">Espagne : La lave du volcan en éruption a atteint l’océan aux Canaries</a> – lematin.ch</li>
+<li><a href="https://www.20min.ch/fr/story/la-lave-du-volcan-en-eruption-a-atteint-locean-aux-canaries-869194524953">Espagne : La lave du volcan en éruption a atteint l’océan aux Canaries</a> – 20 Minutes</li>
+<li><a href="https://www.lematin.ch/story/pyongyang-annonce-avoir-teste-un-missile-hypersonique-678888433562">Corée du Nord : Pyongyang annonce avoir testé un missile hypersonique</a> – lematin.ch</li>
+<li><a href="https://www.lematin.ch/story/la-nasa-sapprete-a-lancer-lucy-vers-les-asteroides-de-jupiter-881535178135">Espace : La Nasa s’apprête à lancer Lucy vers les astéroïdes de Jupiter</a> – lematin.ch</li>
+<li><a href="https://www.20min.ch/fr/story/prison-ferme-pour-le-cogneur-de-plainpalais-977730166993">Genève - L'homme qui avait tabassé un inconnu dans la rue écope de la prison ferme</a> – 20 Minutes</li>
+<li><a href="https://www.lematin.ch/story/la-3e-dose-de-vaccin-na-pas-plus-deffets-secondaires-que-la-deuxieme-262815664249">Covid : La 3e dose de vaccin n’a pas plus d’effets secondaires que la deuxième</a> – lematin.ch</li>
+<li><a href="https://www.lfm.ch/lifestyle/cote-people/billie-eilish-admet-avoir-eu-du-mal-a-ecrire-la-chanson-no-time-to-die/">Billie Eilish admet avoir eu du mal à écrire la chanson "No Time To Die"</a> – lfm.ch</li>
+<li><a href="https://www.rts.ch/info/monde/12527831-les-auditions-des-victimes-ont-debute-au-proces-des-attentats-de-paris.html">Les auditions des victimes ont débuté au procès des attentats de Paris</a> – RTS.ch</li>
+<li><a href="https://www.20min.ch/fr/story/lextension-du-certificat-covid-soutenue-par-deux-tiers-des-suisses-482172872274">Sondage : L’extension du certificat Covid soutenue par deux tiers des Suisses</a> – 20 Minutes</li>
+<li><a href="https://www.radiolac.ch/sport/tennis/entree-en-lice-reussie-pour-jil-teichmann-a-chicago/">Entrée en lice réussie pour Jil Teichmann à Chicago</a> – radiolac.ch</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-29">Mercredi 29 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-29" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #4 day in terms of visits.<br/>
+This was our #3 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.lematin.ch/story/kim-jong-un-rejette-loffre-de-dialogue-de-washington-656715049572">Corée du Nord : Kim Jong-un rejette l’offre de dialogue de Washington</a> – lematin.ch</li>
+<li><a href="https://www.lematin.ch/story/plus-de-100-morts-dans-des-affrontements-en-prison-472673965068">Equateur – Plus de 100 morts dans des affrontements en prison</a> – lematin.ch</li>
+<li><a href="https://www.lematin.ch/story/trois-quarts-des-venezueliens-vivent-dans-la-pauvrete-extreme-697623510940">Venezuela : Trois quarts des Vénézuéliens vivent dans la pauvreté extrême</a> – lematin.ch</li>
+<li><a href="https://www.20min.ch/fr/story/trois-quarts-des-venezueliens-vivent-dans-la-pauvrete-extreme-697623510940">Venezuela : Trois quarts des Vénézuéliens vivent dans la pauvreté extrême</a> – 20 Minutes</li>
+<li><a href="https://www.radiolac.ch/sport/football/ligue-des-champions-manchester-united-gagne-au-finish/">Ligue des champions: Manchester United gagne au finish</a> – radiolac.ch</li>
+<li><a href="https://www.lematin.ch/story/par-sms-la-pologne-dit-aux-migrants-a-sa-frontiere-de-rentrer-a-minsk-928435565884">Crise migratoire : Par SMS, la Pologne dit aux migrants à sa frontière de «rentrer à Minsk»</a> – lematin.ch</li>
+<li><a href="https://www.lfm.ch/actualite/sport/djokovic-forfait-pour-indian-wells/">Djokovic forfait pour Indian Wells</a> – lfm.ch</li>
+<li><a href="https://www.lfm.ch/lifestyle/cote-people/kylie-jenner-pense-que-devenir-maman-etait-son-destin/">Kylie Jenner pense que devenir maman était son destin</a> – lfm.ch</li>
+<li><a href="https://www.lfm.ch/actualite/suisse/pas-de-nouveau-millionnaire-au-tirage-du-swiss-loto-17/">Pas de nouveau millionnaire au tirage du Swiss Loto</a> – lfm.ch</li>
+<li><a href="https://www.netcost-security.fr/actualites/48123/youtube-interdit-la-desinformation-anti-vaccin-sur-sa-plateforme/">YouTube interdit la désinformation anti-vaccin sur sa plateforme</a> – Netcost-security.fr</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-30">Jeudi 30 septembre 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-30" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <div class="inshort">This was our #5 day in terms of visits.<br/>
+This was our #18 day in terms of gap.<br/>(smaller is better)</div>
+<ul class="news-list-items"><li><a href="https://www.rts.ch/sport/tennis/12532664-tennis-bencic-en-quart-teichmann-eliminee.html">Tennis: Bencic en quart, Teichmann éliminée</a> – RTS.ch</li>
+<li><a href="https://www.rts.ch/info/monde/12533271-le-congres-americain-evite-de-justesse-la-paralysie-de-l-etat-federal.html?rts_source=rss_t">Le Congrès américain évite de justesse la paralysie de l'Etat fédéral</a> – RTS.ch</li>
+<li><a href="https://www.lematin.ch/story/cinquante-minutes-de-plaisir-pour-bale-702997640162">Football – Cinquante minutes de plaisir pour Bale</a> – lematin.ch</li>
+<li><a href="https://www.rts.ch/info/suisse/12533239-le-parlement-debloque-finalement-le-milliard-de-cohesion-pour-l-ue.html?rts_source=rss_t">Le Parlement débloque finalement le milliard de cohésion pour l'UE</a> – RTS.ch</li>
+<li><a href="https://www.rts.ch/sport/tennis/12532664-tennis-teichmann-eliminee-bencic-sur-le-pont.html">Tennis: Teichmann dominée par la vice-championne olympique</a> – RTS.ch</li>
+<li><a href="https://www.rts.ch/sport/tennis/12532664-tennis-teichmann-dominee-par-la-vicechampionne-olympique.html">Tennis: Teichmann dominée par la vice-championne olympique</a> – RTS.ch</li>
+<li><a href="https://www.20min.ch/fr/story/hodgers-la-france-ne-veut-plus-batir-pour-les-genevois-720527793226">Genève / Haute-Savoie (F)</a> – 20 Minutes</li>
+<li><a href="https://www.lematin.ch/story/expo-2020-debut-du-plus-grand-evenement-mondial-depuis-la-pandemie-681568577004">début du plus grand événement mondial depuis la pandémie - Le Matin</a> – lematin.ch</li>
+<li><a href="https://www.20min.ch/fr/story/lexpo-universelle-2020-ouvre-ses-portes-a-dubai-256486417722">Emirats arabes unis – L’expo universelle 2020 ouvre ses portes à Dubaï</a> – 20 Minutes</li>
+<li><a href="https://www.rts.ch/info/monde/12532812-la-gauche-et-ludc-en-complet-desaccord-sur-laccueil-de-refugies-afghans.html">Débat nourri au Conseil national sur l'accueil de réfugiés afghans</a> – RTS.ch</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+
+        <section id="team" class="team section-bg">       <div class="container" data-aos="fade-up">           <div class="section-title">               <h2>Experimental</h2>                  <p>                 Linear correlation between # of visits and gap between Blick FR and Watson FR?<br/><img src="assets/graphs/09.2021_lmplot.png"/>                 </p>                  <p>                 Pearson's R: (-0.717214256385294, 8.203470574376624e-06)                 </p>           </div>       </div>   </section>
+    <!-- ======= Skills Section ======= 
+    <section id="skills" class="skills">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+            <img src="assets/img/skills.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+            <h3>Voluptatem dignissimos provident quasi corporis voluptates</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+
+            <div class="skills-content">
+
+              <div class="progress">
+                <span class="skill">HTML <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">CSS <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">JavaScript <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">Photoshop <i class="val">55%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    -->
+
+    <!-- ======= Services Section ======= 
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">Lorem Ipsum</a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">Sed ut perspici</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Magni Dolores</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4><a href="">Nemo Enim</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    -->
+
+    <!-- ======= Cta Section ======= 
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Call To Action</h3>
+            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    -->
+
+   
+
+    <!-- ======= Team Section ======= 
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Pricing Section ======= 
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Pricing</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <h3>Free Plan</h3>
+              <h4><sup>$</sup>0<span>per month</span></h4>
+              <ul>
+                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
+                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
+                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
+                <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <a href="#" class="buy-btn">Get Started</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="box featured">
+              <h3>Business Plan</h3>
+              <h4><sup>$</sup>29<span>per month</span></h4>
+              <ul>
+                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
+                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
+                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
+                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
+                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
+              </ul>
+              <a href="#" class="buy-btn">Get Started</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <h3>Developer Plan</h3>
+              <h4><sup>$</sup>49<span>per month</span></h4>
+              <ul>
+                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
+                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
+                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
+                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
+                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
+              </ul>
+              <a href="#" class="buy-btn">Get Started</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= Contact Section ======= 
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 5589 55488 55s</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4> Automatically created from Mediapulse data</h4>
+            <p>Each month, Mediapulse releases "Brands Daily" data you can download as a excel spreadsheet. This is our starting point.</p>
+             <p>Beware: data structure and format in the PDF file is not consistent... Check <a href="Mediapulse_Online_Content_Traffic_Data.xlsx">a model</a>: this is what the python script expects.</p>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Blick</span></strong>. All Rights Reserved.
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+        Template designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

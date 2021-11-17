@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <title>Blick vs 20 Minuten</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha - v4.6.0
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+      <!-- Uncomment below if you prefer to use an image logo -->
+     <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+       <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="historical_06.2021.html">June 2021</a></li>
+          <li><a class="nav-link scrollto" href="historical_07.2021.html">July 2021</a></li>
+          <li><a class="nav-link scrollto" href="historical_08.2021.html">August 2021</a></li>
+          <li><a class="nav-link   scrollto" href="historical_09.2021.html">September 2021</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-1 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>Blick vs 20 Minuten</h1>
+          <h2>Juni 2021</h2>
+          <h2>Bad news! The gap between 20 Minutes and Blick in terms of visits is bigger last month compared to the previous month. The difference in average visits per day (34.0%) was 33.9% bigger than last month (0%).</h2>
+        </div>
+        <div class="col-lg-6 order-2 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <canvas id="monthly-compare" width="540" height="300"></canvas>
+          <script>
+              Chart.defaults.font.size = 16;
+              Chart.defaults.color = 'rgba(255, 255, 255, 0.6)';
+              Chart.defaults.borderColor = 'rgba(255, 255, 255, 0.6)';
+              new Chart(document.getElementById("monthly-compare"), {
+                type: 'bar',
+                data: {
+                  labels: [ 'Juni', 'Mai'],
+                  datasets: [
+                    {
+                      label: "Blick",
+                      backgroundColor: "rgba(255, 0, 0, 0.8)",
+                      data: [ '2537730', '1000']
+                    }, {
+                      label: "20 Minuten",
+                      backgroundColor:"rgba(30,144,255, 0.8)",
+                      data: [ '3580066', '1000']
+                    }
+                  ]
+                },
+                options: {
+                    plugins: {
+                        title: {
+                            display: true,
+                            color: "white",
+                            text: 'Visits per day'
+                        }
+                      }
+                  }
+                
+            });
+        </script>
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+ <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Daily stats</h2>
+          <p>Juni 2021 daily visitors</p>
+      
+        <canvas id="fullMonth" width="1234" height="616"></canvas>
+  <script>
+  // build an array with all trends
+  let dailyTrends = ['Happy Pride Month, #mentalhealth, Australia, Pizza, Lösungen', 'CO2-Gesetz, Alternativen, #doge, #CHvote, Initiativen', '#SUIGER, #IIHFWorlds, #HoppSchwiiz, #WorldBicycleDay, #cybersecurity', 'Elon, Dame, Hälfte, Resultat, Fauci', '#AzerbaijanGP, #WorldEnvironmentDay, #TwitterBan, Zurich, #GenerationRestoration', '#AzerbaijanGP, Hamilton, Pirelli, Vettel, Verstappen', '#ProtectTheKids, Logan, Mayweather, Floyd, #Klimaschutz', 'Konsequenzen, #CO2Gesetz, Amazon, Herbst, Covid-Gesetz', 'El Salvador, DeFi, Giroud, Impfungen, Macron', 'Maske, Antworten, Battlefield, Fortnite, Vorteil', '#EURO2020, Ethiopia, #Tesla, America, Vögel', '#srfarena, #UefaEuro2020, #RolandGarros, #TURITA, Nadal', '#Abst21, #CO2Gesetz, #CHvote, #ENGCRO, #Abstimmungssonntag', 'Welle, klimaziele, Landwirtschaft, #NEDUKR, Verlierer', '#ESPSWE, Bruder, Coucou, #Schweiz, Trump', '#greenpeace, Putin, #FRAGER, #Genf, #FRAALL', 'Federer, #ITASUI, Fussball, #Nati, Italien', 'Verhalten, Generation, #NEDAUT, Worten, Impfstoff', '#gewitter, #srfarena, Maske, Verhalten, Normalität', 'Auge, #ESPPOL, Philou, Trump, Nigeria', 'Afghanistan, #swissCovidFail, Wunder, Schwachsinn, Taliban', '#BBNaijaReunion, Danemark, #RUSDEN, Partner, Tesla', 'Herbst, Brexit, #loveislove, #Ungarn, Programm', '#FreeBritney, John McAfee, #GERHUN, America, Schäden', '#GoHabsGo, Tyler, #LongCovid, Begriff, #Klimawandel', '#Wuerzburg, George Floyd, #srfarena, West, Täter', '#ITAAUT, New York, #ItaliaAustria, #AUTITA, Franken', '#FRASUI, #krzh, COVID-19, Hop Suisse, Zertifikat', '#ENGGER, Germany, Nigeria, Chine, Xhaka', '#SWEUKR, #China, Moderna, Bitcoin, Fair']
+
+  const footer = (tooltipItems) => {
+
+      // alert(tooltipItems[2].label);
+        let currTrends = String(dailyTrends[tooltipItems[2].dataIndex]);
+        currTrends = currTrends.replaceAll(", ", "\n- ");
+        return 'Trending topics:\n- ' + currTrends;
+  };
+/*const label = (tooltipItems) => {
+          if(tooltipItems.datasetIndex == 0){
+            return 'hey, label';    
+          }else{
+            return tooltipItems.datasetIndex.label; 
+          } 
+    };
+    */
+Chart.defaults.color = 'black';
+Chart.defaults.borderColor = 'black';
+
+ new Chart(document.getElementById("fullMonth"), {
+  type: "bar",
+  data: {
+    labels: ['01.06.2021', '02.06.2021', '03.06.2021', '04.06.2021', '05.06.2021', '06.06.2021', '07.06.2021', '08.06.2021', '09.06.2021', '10.06.2021', '11.06.2021', '12.06.2021', '13.06.2021', '14.06.2021', '15.06.2021', '16.06.2021', '17.06.2021', '18.06.2021', '19.06.2021', '20.06.2021', '21.06.2021', '22.06.2021', '23.06.2021', '24.06.2021', '25.06.2021', '26.06.2021', '27.06.2021', '28.06.2021', '29.06.2021', '30.06.2021'],
+    datasets: [
+      {
+        type: "bar",
+        backgroundColor: ['rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(36, 114, 26, 0.8)', 'rgba(36, 114, 26, 0.8)', 'rgba(36, 114, 26, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(255, 0, 0, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(36, 114, 26, 0.8)', 'rgba(255, 0, 0, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(255, 0, 0, 0.8)', 'rgba(255, 0, 0, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(36, 114, 26, 0.8)', 'rgba(255, 0, 0, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(54, 162, 235, 0.8)'],
+        borderColor: "rgba(54, 162, 235, 1)",
+        borderWidth: 1,
+        label: "Difference",
+        order: 2,
+        yAxisID: 'A',
+        data: [32.6, 31.7, 31.7, 34.7, 26.4, 25.0, 30.4, 34.0, 32.1, 35.1, 35.1, 36.2, 39.3, 35.0, 33.8, 31.6, 30.7, 38.6, 36.9, 34.9, 36.0, 33.8, 37.1, 37.6, 35.1, 32.0, 31.5, 37.4, 36.3, 35.2]
+      },
+      {
+        type: "line",
+        order: 1,
+        label: "Blick",
+        borderColor: "rgba(255, 0, 0, 0.8)",
+        data: [2408900.0, 2345800.0, 2345800.0, 2406300.0, 2348000.0, 2465900.0, 2618700.0, 2498800.0, 2474300.0, 2342400.0, 2430800.0, 2532900.0, 2721600.0, 2565800.0, 2542400.0, 2684300.0, 2594500.0, 2477200.0, 2333600.0, 2654300.0, 2755900.0, 2645600.0, 2724700.0, 2534900.0, 2369000.0, 2259300.0, 2398400.0, 3088900.0, 3035500.0, 2527400.0],
+        lineTension: 0, //
+        yAxisID: 'B',
+        fill: false 
+      },
+      {
+        type: "line",
+        order: 0,
+        label: "20 Minuten",
+        borderColor: "rgba(30,144,255, 0.8)",
+        data: [3348700.0, 3228700.0, 3228700.0, 3416200.0, 3060900.0, 3169300.0, 3556300.0, 3520900.0, 3421600.0, 3341100.0, 3465000.0, 3651900.0, 4050900.0, 3655700.0, 3575900.0, 3691400.0, 3535700.0, 3663800.0, 3390100.0, 3778400.0, 3965800.0, 3721500.0, 3963900.0, 3710100.0, 3376200.0, 3119100.0, 3295000.0, 4510400.0, 4380900.0, 3607900.0],
+        lineTension: 0, //
+        yAxisID: 'B',
+        fill: false 
+      }
+    ]
+  },
+    options: {
+        interaction: {
+          intersect: false,
+          mode: 'index'
+        },
+        plugins: {
+            tooltip: {
+                callbacks: {
+                   footer: footer
+                  // label: label
+                }
+            }
+        },
+        scales: {
+            A: {
+                type: 'linear',
+                position: 'right',
+                max: 100,
+                grid: {
+                 display:false
+                },
+                 ticks: {
+                    max: 100,
+                    min: 0
+                },
+                 title: {
+                    display: true,
+                    text: 'Percent difference'
+                }
+            },
+            B: {
+                type: 'linear',
+                position: 'left',
+                title: {
+                    display: true,
+                    text: 'Visits per day'
+                }
+            }
+        }
+    }
+ });
+
+
+</script>
+
+        </p>
+        </div>
+<!-- ======= Portfolio cards =======
+        <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-app">App</li>
+          <li data-filter=".filter-card">Card</li>
+          <li data-filter=".filter-web">Web</li>
+        </ul>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h3>This is just a test</h3>
+              <p> lfksgjhliofgsjlfkgsjfgjlskjsfgkll jkjfgslkgfjskljfgskljgfskl lfksgjhliofgsjlfkgsjfgjlskjsfgkll jkjfgslkgfjskljfgskljgfskl lfksgjhliofgsjlfkgsjfgjlskjsfgkll jkjfgslkgfjskljfgskljgfskl lfksgjhliofgsjlfkgsjfgjlskjsfgkll jkjfgslkgfjskljfgskljgfskl lfksgjhliofgsjlfkgsjfgjlskjsfgkll jkjfgslkgfjskljfgskljgfskl lfksgjhliofgsjlfkgsjfgjlskjsfgkll jkjfgslkgfjskljfgskljgfskl lfksgjhliofgsjlfkgsjfgjlskjsfgkll jkjfgslkgfjskljfgskljgfskl lfksgjhliofgsjlfkgsjfgjlskjsfgkll jkjfgslkgfjskljfgskljgfskl  ENF</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Card 2</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Card 1</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Card 3</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+       -->
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+  <main id="main">
+  
+    <!-- ======= Cliens Section =======
+    <section id="cliens" class="cliens section-bg">
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in">
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+      </div>
+    </section> 
+    End Cliens Section -->
+
+    <!-- ======= About Us Section ======= 
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
+              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <a href="#" class="btn-learn-more">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    End About Us Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+              <h3>Tops and flops of the month</h3>
+              <p>
+              In a nutshell: what was the best and worst day of the month in the competition for visits between Blick and 20 Minuten?
+                            </p>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>Best</span>  06.06.2021 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <p>
+                      <strong>Woaw!</strong><br/>On 06.06.2021, Blick was closest to 20 Minuten, with a 24% difference in visits only (that's 8% smaller than average).<br/>
+This day, we had 2,465,900 visits (vs 3,169,300 for 20 Minuten).<br/><br/>
+This was our #19 day of the Month in terms of visits.<br/><br/>
+These were the most trending Twitter topics in Switzerland on that day:<br/>
+#AzerbaijanGP, Hamilton, Pirelli, Vettel, Verstappen
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>Worst</span>  13.06.2021 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      <strong>Well, not so good…</strong> <br/>On 13.06.2021, Blick was really distanciated by 20 Minuten, with a 39% difference in visits (that's 5% more than average). This is our worst day in the battle.<br/><br/>
+This day, we had 2,721,600 visits (vs 4,050,900 for 20 Minuten).<br/><br/>
+This was our #5 day of the Month in terms of visits.<br/><br/>
+These were the most trending Twitter topics on that day:<br/>
+#Abst21, #CO2Gesetz, #CHvote, #ENGCRO, #Abstimmungssonntag
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Top Headlines</h2>
+          <p>For each day, the top news of the days for Switzerland, according to a service called <a href="https://gnews.io/">Gnews.io</a>.<br/>
+          Unfortunately, we are not so sure the data is reliable, but the very reliable Google doesn't provide a history of top news.</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Dienstag 01 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse  show " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.20min.ch/story/hacker-greifen-weltgroessten-fleischkonzern-an-920956164224">Cyberattacke : Hacker greifen weltgrössten Fleischkonzern an</a> – 20 Minuten</li>
+<li><a href="https://computerwelt.at/news/microsoft-build-2021-die-welt-gehoert-den-entwicklern/">Microsoft Build 2021: „Die Welt gehört den Entwicklern“</a> – Computerwelt</li>
+<li><a href="https://telebasel.ch/2021/06/01/eishockey-wm-schweiz-trifft-in-viertelfinals-auf-deutschland/">Eishockey-WM: Schweiz trifft in Viertelfinals auf Deutschland</a> – Telebasel</li>
+<li><a href="https://telebasel.ch/2021/06/01/schweiz-trifft-in-viertelfinals-auf-nachbar-deutschland/">Schweiz trifft in Viertelfinals auf Nachbar Deutschland</a> – Telebasel</li>
+<li><a href="https://www.srf.ch/news/abstimmungen-13-juni-2021/trinkwasser-initiative/2-srg-umfrage-trinkwasser-initiative-mehrheit-will-nein-stimmen">2. SRG-Umfrage - Trinkwasser-Initiative: Mehrheit will Nein stimmen</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/news/schweiz/das-neueste-zur-coronakrise-slowakei-setzt-auf-umstrittenen-corona-impfstoff">Das Neueste zur Coronakrise - Slowakei setzt auf umstrittenen Corona-Impfstoff</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.blick.ch/ausland/weltweit-massstaebe-setzen-eu-startet-mit-vergabe-von-corona-zertifikaten-id16564952.html">Corona: Start der Vergabe von EU-Covid-Zertifikaten</a> – BLICK</li>
+<li><a href="https://www.blick.ch/ausland/videoaufnahmen-eines-schweizers-deuten-darauf-hin-war-bremse-von-todes-seilbahn-seit-jahren-manipuliert-id16564726.html">Beweise aus der Schweiz: Bremse von Todes-Seilbahn seit Jahren manipuliert?</a> – BLICK</li>
+<li><a href="https://www.20min.ch/story/russischer-oppositioneller-wird-aus-flugzeug-geholt-und-festgenommen-904140102990">Kurz vor Start : Russischer Oppositioneller wird aus Flugzeug geholt und festgenommen</a> – 20 Minuten</li>
+<li><a href="https://www.srf.ch/news/schweiz/das-neueste-zur-coronakrise-bag-moeglicherweise-auffrischungs-impfungen-ab-ende-jahr">Das Neueste zur Coronakrise - BAG: Möglicherweise Auffrischungs-Impfungen ab Ende Jahr</a> – Schweizer Radio und Fernsehen (SRF)</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-2">Mittwoch 02 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.blick.ch/ausland/lapid-hat-koalition-in-israel-geschmiedet-aera-netanjahu-vorerst-beendet-id16568322.html">Lapid schmiedet Koalition in Israel: Ära Netanjahu vorerst beendet!</a> – BLICK</li>
+<li><a href="https://www.20min.ch/story/neue-koalition-beendet-vorerst-die-aera-von-benjamin-netanyahu-737597536187">Israel : Neue Koalition beendet vorerst die Ära von Benjamin Netanyahu</a> – 20 Minuten</li>
+<li><a href="https://www.blick.ch/incoming/das-wallis-drueckte-ein-auge-zu-covid-patienten-gingen-weiter-in-restaurants-id16567820.html">Covid-Patienten besuchten weiterhin das Restaurant im Wallis</a> – BLICK.CH</li>
+<li><a href="https://www.srf.ch/sport/tennis/grand-slam-turniere/live-auf-srf-federer-am-donnerstag-um-16-uhr-djokovic-muss-weichen">Live auf SRF - Federer am Donnerstag um 16 Uhr - Djokovic muss "weichen"</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.blick.ch/politik/kanzler-kurz-verspricht-oesterreich-setzt-sich-bei-eu-fuer-schweiz-ein-id16567759.html">EU: Österreich setzt sich bei EU für Schweiz ein</a> – BLICK</li>
+<li><a href="https://www.srf.ch/sport/fussball/nationalmannschaft/letzter-test-vs-liechtenstein-muede-aber-fit-schweiz-will-mit-gutem-gefuehl-nach-baku">Letzter Test vs. Liechtenstein - "Müde aber fit" - Schweiz will mit gutem Gefühl nach Baku</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/sport/fussball/uefa-euro-2020/letzter-test-vs-liechtenstein-muede-aber-fit-schweiz-will-mit-gutem-gefuehl-nach-baku">Letzter Test vs. Liechtenstein - "Müde aber fit" - Schweiz will mit gutem Gefühl nach Baku</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.blick.ch/people-tv/international/darum-darf-pietro-lombardi-nicht-mehr-autofahren-fuehrerschein-weg-id16565803.html">Pietro Lombardi muss seinen Führerschein vorerst abgeben</a> – BLICK</li>
+<li><a href="https://www.20min.ch/story/bag-streicht-italien-ganz-von-der-quarantaene-liste-525698064215">Kroatien, Zypern, Türkei fallen weg</a> – 20 Minuten</li>
+<li><a href="https://www.srf.ch/news/schweiz/geimpft-getestet-genesen-staenderat-will-grundrechte-der-drei-g-absichern">Geimpft, getestet, genesen - Ständerat will Grundrechte der drei G absichern</a> – Schweizer Radio und Fernsehen (SRF)</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-3">Donnerstag 03 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.scinexx.de/news/medizin/so-loest-das-coronavirus-diabetes-aus/">So löst das Coronavirus Diabetes aus</a> – scinexx | Das Wissensmagazin</li>
+<li><a href="https://www.20min.ch/story/von-new-york-nach-london-in-dreieinhalb-stunden-801706489730">United Airlines kauft Überschalljets</a> – 20 Minuten</li>
+<li><a href="https://www.blick.ch/people-tv/royals/herzogin-bangt-um-ihren-titel-gibt-meghan-harry-jetzt-einen-maulkorb-id16571325.html">Herzogin bangt um ihren Titel: Gibt Meghan Harry jetzt einen Maulkorb?</a> – BLICK</li>
+<li><a href="https://www.srf.ch/sport/fussball/uefa-euro-2020/7-0-im-letzten-em-testspiel-doch-noch-den-tritt-gefunden-schweiz-ueberrollt-liechtenstein">7:0 im letzten EM-Testspiel - Doch noch den Tritt gefunden: Schweiz überrollt Liechtenstein</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/news/international/uno-bericht-zum-40-jahrestag-ausrottung-von-aids-das-ziel-rueckt-in-weite-ferne">UNO-Bericht zum 40. Jahrestag - Ausrottung von Aids: Das Ziel rückt in weite Ferne</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/parmelin-und-cassis-treffen-sich-in-genf-mit-us-praesident-biden-741418360481">16. Juni : Parmelin und Cassis treffen sich in Genf mit US-Präsident Biden</a> – 20 Minuten</li>
+<li><a href="https://www.blick.ch/politik/gipfel-in-genf-parmelin-und-cassis-treffen-us-praesident-joe-biden-id16571009.html">Gipfel in Genf: Parmelin und Cassis treffen US-Präsident Joe Biden</a> – BLICK</li>
+<li><a href="https://www.srf.ch/sport/tennis/grand-slam-turniere/2-runde-an-den-french-open-federer-befreit-sich-gegen-cilic-aus-der-bredouille-und-siegt">2. Runde an den French Open - Federer befreit sich gegen Cilic aus der Bredouille und siegt</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/news/schweiz/exporte-von-kriegsmaterial-korrektur-initiative-ein-lehrbeispiel-der-direkten-demokratie">Exporte von Kriegsmaterial - Korrektur-Initiative: Ein Lehrbeispiel der direkten Demokratie</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/die-nati-testet-in-der-letzten-partie-vor-der-em-gegen-liechtenstein-246312653450">7:0-Schützenfest beim letzten Nati-Test vor der EM</a> – 20 Minuten</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-4">Freitag 04 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.srf.ch/sport/fussball/test-laenderspiele/4-0-im-letzten-test-italien-schiesst-sich-in-em-glanzform">4:0 im letzten Test - Italien schiesst sich in EM-Glanzform</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.blick.ch/sport/fussball/nati-gegner-an-der-euro-italien-schiesst-sich-warm-fuer-die-em-id16574574.html">EM-Testspiel: Nati-Gegner Italien schiesst sich warm für die Euro</a> – BLICK</li>
+<li><a href="https://www.20min.ch/story/musste-saman-18-sterben-weil-sie-nicht-ihren-cousin-heiraten-wollte-467740430171">Seit Ende April verschwunden</a> – 20 Minuten</li>
+<li><a href="https://telebasel.ch/2021/06/04/sternekoch-flavio-fermi-zurueck-in-basel-es-ist-wie-nachhause-kommen/">Sternekoch Flavio Fermi zurück in Basel: "Es ist wie Nachhause kommen"</a> – Telebasel</li>
+<li><a href="https://www.20min.ch/story/seaside-festival-findet-mit-10000-personen-pro-tag-statt-194339084856">Einlass nur mit Covid-Zertifikat</a> – 20 Minuten</li>
+<li><a href="https://telebasel.ch/2021/06/04/gericht-spricht-thomas-weber-frei/">Gericht spricht Thomas Weber frei</a> – Telebasel</li>
+<li><a href="https://www.20min.ch/story/baselbieter-regierungsrat-thomas-weber-svp-freigesprochen-612799513449">Strafgericht Baselland : «Beunruhigende Erkenntnisse» und Freispruch für Regierungsrat Thomas Weber (SVP)</a> – 20 Minuten</li>
+<li><a href="https://www.blick.ch/wirtschaft/geimpfte-duerfen-sich-freuen-ohne-pcr-test-in-die-frankreich-ferien-id16573495.html">Geimpfte dürfen sich freuen: Ohne PCR-Test in die Frankreichferien!</a> – BLICK</li>
+<li><a href="https://www.blick.ch/wirtschaft/swissmedic-gibt-gruenes-licht-fuer-corona-spritze-teenie-impfung-von-pfizer-ist-zugelassen-id16572643.html">Swissmedic: Zulassung für Pfizer-Corona-Impfstoff für Kinder ab 12 Jahren</a> – BLICK</li>
+<li><a href="https://www.srf.ch/news/schweiz/das-neueste-zur-coronakrise-impfstoff-von-pfizer-fuer-jugendliche-in-der-schweiz-freigegeben">Das Neueste zur Coronakrise - Impfstoff von Pfizer für Jugendliche in der Schweiz freigegeben</a> – Schweizer Radio und Fernsehen (SRF)</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-5">Samstag 05 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.neueschweizerzeitung.ch/was-zum-teufel-passiert-in-palworld/">Was zum Teufel passiert in Palworld?</a> – Neue Schweizer Zeitung</li>
+<li><a href="https://www.neueschweizerzeitung.ch/der-nasa-direktor-beschreibt-die-missionen-zum-mond-zum-mars-zur-venus-und-zu-den-bemuehungen-der-agentur-auf-der-erde/">Der NASA-Direktor beschreibt die Missionen zum Mond, zum Mars, zur Venus und zu den Bemühungen der Agentur auf der Erde</a> – Neue Schweizer Zeitung</li>
+<li><a href="https://www.blick.ch/ausland/vergleich-mit-schweizer-sackmesser-us-richter-hebt-sturmgewehr-verbot-in-kalifornien-auf-id16576488.html">US-Richter hebt Sturmgewehr-Verbot in Kalifornien auf</a> – BLICK</li>
+<li><a href="https://www.20min.ch/story/frauen-des-fc-luzern-schlagen-ueberraschend-fc-zuerich-529714008470">Frauen des FC Luzern schlagen überraschend den FC Zürich im Cup-Final</a> – 20 Minuten</li>
+<li><a href="https://www.20min.ch/story/retter-suchen-nach-vermisster-person-in-der-aare-810894537333">Einsatz in Bern : Retter suchen nach vermisster Person in der Aare</a> – 20 Minuten</li>
+<li><a href="https://www.srf.ch/news/wirtschaft/kleinstaat-im-nachteil-mindeststeuersatz-das-ist-keine-gute-nachricht-fuer-die-schweiz">Kleinstaat im Nachteil - Mindeststeuersatz: "Das ist keine gute Nachricht für die Schweiz"</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/sport/mehr-sport/beachvolleyball/vier-sterne-turnier-in-ostrava-heidrich-verge-depre-ziehen-in-den-final-ein">Vier-Sterne-Turnier in Ostrava - Heidrich/Vergé-Dépré ziehen in den Final ein</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/news/international/bewaehrungsprobe-fuer-die-cdu-die-deutsche-furcht-vor-dem-radikalen">Bewährungsprobe für die CDU - Die deutsche Furcht vor dem Radikalen</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.bild.de/ratgeber/2021/ratgeber/neue-corona-studie-kann-eine-corona-infektion-diabetes-ausloesen-76625494.bild.html">Kann eine Corona-Infektion Diabetes auslösen?</a> – BILD</li>
+<li><a href="https://telebasel.ch/2021/06/05/jennifer-bosshard-und-pascal-schuerpf-haben-geheiratet/">Jennifer Bosshard und Pascal Schürpf haben geheiratet</a> – Telebasel</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-6">Sonntag 06 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-6" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.20min.ch/story/flugzeug-von-kamala-harris-muss-wegen-umkehren-495207200266">US-Vizepräsidentin : Flugzeug von Kamala Harris muss umkehren</a> – 20 Minuten</li>
+<li><a href="https://www.20min.ch/story/krimi-in-riga-kanada-feiert-seinen-27-weltmeistertitel-388285104661">Entscheid in der Verlängerung</a> – 20 Minuten</li>
+<li><a href="https://www.blick.ch/people-tv/international/sarah-engels-enthuellt-weitere-details-zur-schwangerschaft-alessio-freut-sich-auf-sein-geschwisterchen-id16577599.html">Das denkt Alessio über die Schwangerschaft von Mami Sarah Engels</a> – BLICK</li>
+<li><a href="https://www.srf.ch/news/international/stimmungstest-bundestagswahl-cdu-bei-landtagswahl-in-sachsen-anhalt-deutlich-vorne">Stimmungstest Bundestagswahl - CDU bei Landtagswahl in Sachsen-Anhalt deutlich vorne</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://telebasel.ch/2021/06/06/das-baby-von-meghan-und-harry-ist-da/">"Lili" ist da - Harry und Meghan begrüssen ihr zweites Kind</a> – Telebasel</li>
+<li><a href="https://www.20min.ch/story/der-schweizer-stefan-kueng-gewinnt-den-prolog-der-tour-de-suisse-935341326434">Stefan Küng vor Stefan Bissegger siegen zum Auftakt der Tour de Suisse</a> – 20 Minuten</li>
+<li><a href="https://www.srf.ch/news/international/215-tote-kinder-in-kanada-nach-fund-von-massengrab-forderungen-an-die-katholische-kirche">215 tote Kinder in Kanada - Nach Fund von Massengrab: Forderungen an die katholische Kirche</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/sport/motorsport/formel-1/formel-1-gp-von-aserbaidschan-perez-siegt-verstappen-und-hamilton-geschlagen">Formel-1-GP von Aserbaidschan - Perez siegt - Verstappen und Hamilton geschlagen</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/die-toten-hosen-feiern-ihr-40-jahr-jubilaeum-im-zuercher-letzigrund-910688043472">Stadionshow im Juli 2022</a> – 20 Minuten</li>
+<li><a href="https://www.heilpraxisnet.de/naturheilpraxis/rueckruf-mehl-mit-salmonellen-verunreinigt-20210606540242/">Rückruf: Mehl mit Salmonellen verunreinigt</a> – Heilpraxisnet.de</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-7">Montag 07 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-7" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.blick.ch/politik/nach-kritik-der-kantone-praesentiert-ueli-maurer-ein-einfaches-covid-zertifikat-mit-einem-klick-zum-corona-pass-id16574475.html">Kantone sind zufrieden mit Covid-Zertifikat</a> – BLICK</li>
+<li><a href="https://www.gmx.ch/magazine/digital/apple-bringt-datenschutz-smarte-funktion-geraete-35883592">Apple bringt mehr Datenschutz und smarte Funktion für seine Geräte</a> – GMX.ch</li>
+<li><a href="https://www.pocket-lint.com/de-de/handy/news/apple/137365-apple-wwdc-developer-conference-wenn-es-soweit-ist-und-alle-wichtigen-ankundigungen">Apple WWDC 2021: Alle wichtigen Ankündigungen</a> – Pocket-lint</li>
+<li><a href="https://www.blick.ch/sport/fussball/em/nati-direktor-tami-verurteilt-xhakas-tattoo-besuch-das-war-ein-fehler-von-granit-id16581271.html">Nati-Direktor Pierluigi Tami rügt Granit Xhaka wegen Tattoo-Besuch</a> – BLICK</li>
+<li><a href="https://www.20min.ch/story/drillinge-bushidos-ehefrau-ist-schwanger-501742875805">Anna Maria Ferchichi : Drillinge! Bushidos Ehefrau ist schwanger</a> – 20 Minuten</li>
+<li><a href="https://www.20min.ch/story/heftiger-regen-ueberflutet-strassen-erdrutsch-bei-kemptthal-589673928626">Unwetter Schweiz : Heftiger Regen überflutet Strassen – Erdrutsch bei Kemptthal</a> – 20 Minuten</li>
+<li><a href="https://www.blick.ch/people-tv/international/nach-tod-von-ihrem-ehemann-willi-45-jasmin-herren-meldet-sich-erstmals-persoenlich-zu-wort-id16580356.html">Jasmin Herren meldet sich nach Tod von Willi erstmals persönlich zu Wort</a> – BLICK</li>
+<li><a href="https://www.blick.ch/sport/rad/kueng-verteidigt-leadertrikot-hirschi-verpasst-podest-der-2-tour-de-suisse-etappe-knapp-id16580785.html">Tour de Suisse: Hirschi schrammt in 2. Etappe am Podest vorbei</a> – BLICK</li>
+<li><a href="https://www.srf.ch/sport/tennis/grand-slam-turniere/musetti-gibt-verletzt-auf-djokovic-wackelt-faellt-aber-nicht">Musetti gibt verletzt auf - Djokovic wackelt, fällt aber nicht</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/news/international/praesidentschaftswahl-peru-fujimori-fuehrt-nur-wenige-tausend-stimmen-vor-castillo">Präsidentschaftswahl Peru - Fujimori führt nur wenige tausend Stimmen vor Castillo</a> – Schweizer Radio und Fernsehen (SRF)</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-8">Dienstag 08 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-8" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.srf.ch/news/schweiz/unwetter-ueber-der-schweiz-erneut-starke-regenfaelle-in-der-nordostschweiz">Unwetter über der Schweiz - Erneut starke Regenfälle in der Nordostschweiz</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/news/schweiz/gewitterwarnung-starke-gewitter-mit-viel-regen-ziehen-ueber-die-schweiz">Gewitterwarnung - Starke Gewitter mit viel Regen ziehen über die Schweiz</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/news/panorama/schweizer-muttermilch-gestillte-babys-trinken-viel-zu-viele-dioxine">Schweizer Muttermilch - Gestillte Babys trinken viel zu viele Dioxine</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/news/panorama/schweizer-muttermilch-gestillte-babys-trinken-viele-dioxine">Schweizer Muttermilch - Gestillte Babys trinken viele Dioxine</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/news/panorama/47-millionen-kranke-weltweit-umstrittenes-alzheimer-medikament-weckt-hoffnungen">47 Millionen Kranke weltweit - Umstrittenes Alzheimer-Medikament weckt Hoffnungen</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/sport/mehr-sport/rad/3-etappe-der-tour-de-suisse-van-der-poel-siegt-und-entreisst-kueng-das-gelbe-trikot">3. Etappe der Tour de Suisse - Van der Poel siegt - und entreisst Küng das gelbe Trikot</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.blick.ch/sport/motorsport/motorrad/auch-der-himmel-weinte-in-bulle-fr-emotionaler-abschied-von-toeff-pilot-dupasquier-19-id16583905.html">Jason Dupasquier: Emotionale Trauerfeier in Bulle FR mit Töff-Korso</a> – BLICK</li>
+<li><a href="https://www.srf.ch/news/international/zwei-festnahmen-emmanuel-macron-taetlich-angegriffen">Zwei Festnahmen - Emmanuel Macron tätlich angegriffen</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/un-tribunal-bestaetigt-urteil-gegen-ratko-mladic-291341917076">Ratko Mladic : UN-Tribunal bestätigt Urteil gegen «Schlächter von Bosnien»</a> – 20 Minuten</li>
+<li><a href="https://www.20min.ch/story/harry-und-meghan-verabschieden-sich-fuer-mehrere-monate-739344130321">Harry und Meghan verabschieden sich für mehrere Monate in Elternzeit</a> – 20 Minuten</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-9">Mittwoch 09 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-9" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.blick.ch/politik/buergerliche-kritisieren-linkes-ahv-referendum-billige-propaganda-zulasten-eines-sozialwerks-id16587668.html">Bürgerliche kritisieren linkes AHV-Referendum</a> – BLICK</li>
+<li><a href="https://www.20min.ch/story/uni-zuerich-koennte-mit-alzheimer-medikament-millionen-verdienen-725559546603">Patent "made in Switzerland"</a> – 20 Minuten</li>
+<li><a href="https://www.srf.ch/sport/tennis/grand-slam-turniere/french-open-in-paris-es-kommt-zum-gigantenduell-zwischen-nadal-und-djokovic">French Open in Paris - Es kommt zum Gigantenduell zwischen Nadal und Djokovic</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/was-fuer-eine-farce-djokovic-und-berrettini-muessen-den-platz-verlassen-407855480128">Wegen Ausgangssperre : Was für eine Farce – Djokovic und Berrettini müssen den Platz verlassen</a> – 20 Minuten</li>
+<li><a href="https://www.srf.ch/news/international/anti-nawalny-gesetz-russisches-gericht-verbietet-nawalny-organisationen-endgueltig">"Anti-Nawalny-Gesetz" - Russisches Gericht verbietet Nawalny-Organisationen endgültig</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/joe-biden-ist-in-grossbritannien-gelandet-894494483973">Ab Dienstag in der Schweiz</a> – 20 Minuten</li>
+<li><a href="https://www.srf.ch/news/schweiz/starke-regenfaelle-gewitter-serie-in-der-schweiz-geht-weiter">Starke Regenfälle - Gewitter-Serie in der Schweiz geht weiter</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/libuse-safrankova-der-star-aus-aschenbroedel-ist-verstorben-284084918334">Zwei Tage nach Geburtstag</a> – 20 Minuten</li>
+<li><a href="https://www.games.ch/battlefield-6/news/2042-unbekannten-spielmodus-jjg4/">Battlefield 2042 hat einen noch unbekannten Spielmodus</a> – Games.ch</li>
+<li><a href="https://www.blick.ch/people-tv/international/libuse-safrankova-gestorben-aschenbroedel-darstellerin-68-ist-tot-id16586878.html">Aschenbrödel-Darstellerin Libuše Šafránková (†68) ist tot</a> – BLICK</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-10">Donnerstag 10 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-10" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.srf.ch/news/international/g7-spitzentreffen-in-cornwall-biden-und-johnson-zeigen-sich-geeint-ausser-beim-brexit">G7-Spitzentreffen in Cornwall - Biden und Johnson zeigen sich geeint - ausser beim Brexit</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.neueschweizerzeitung.ch/cyberpunk-2077-pub-cd-projekt-sagt-dass-die-datenverletzung-schlimmer-ist-als-urspruenglich-angenommen/">Cyberpunk 2077 Pub CD Projekt sagt, dass die Datenverletzung schlimmer ist als ursprünglich angenommen</a> – Neue Schweizer Zeitung</li>
+<li><a href="https://www.20min.ch/story/youtuber-philipp-mickenbecker-ist-tot-204726887004">23-jährig an Krebs gestorben</a> – 20 Minuten</li>
+<li><a href="https://www.srf.ch/news/wirtschaft/luftfahrt-in-der-krise-wie-die-zuercher-flughafengemeinden-leiden">Luftfahrt in der Krise - Wie die Zürcher Flughafengemeinden leiden</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/news/panorama/biodiversitaet-und-klimakrise-artensterben-aufgrund-unkoordinierter-klimamassnahmen">Biodiversität und Klimakrise - Artensterben aufgrund unkoordinierter Klimamassnahmen</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/sport/fussball/uefa-euro-2020/letztes-aufeinandertreffen-als-wales-der-nati-die-em-2012-vermasselte">Letztes Aufeinandertreffen - Als Wales der Nati die EM 2012 vermasselte</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/staatsanwaltschaft-fordert-18-monate-haft-fuer-macron-ohrfeiger-296475480346">Im Schnellverfahren : Macron-Ohrfeiger muss nach seinem Angriff ins Gefängnis</a> – 20 Minuten</li>
+<li><a href="https://www.srf.ch/sport/mehr-sport/rad/5-etappe-der-tour-de-suisse-carapaz-siegt-und-uebernimmt-das-gelbe-trikot">5. Etappe der Tour de Suisse - Carapaz siegt und übernimmt das gelbe Trikot</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/haeftling-stirbt-im-gefaengnis-822969057919">Altstätten : Häftling stirbt im Gefängnis</a> – 20 Minuten</li>
+<li><a href="https://telebasel.ch/2021/06/10/so-spektakulaer-praesentierte-sich-die-sonnenfinsternis/">So spektakulär präsentierte sich die Sonnenfinsternis</a> – Telebasel</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-11">Freitag 11 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-11" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.srf.ch/sport/fussball/uefa-euro-2020/sieg-gegen-wales-fast-pflicht-die-mission-viertelfinal-beginnt-mit-dem-schluesselspiel">Sieg gegen Wales fast Pflicht - Die Mission Viertelfinal beginnt mit dem Schlüsselspiel</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.blick.ch/sport/tennis/grand-slam/french-open/krimi-sieg-in-paris-djokovic-entthront-sandkoenig-nadal-in-epischem-halbfinal-id16593905.html">French Open: Djokovic gewinnt epischen Paris-Halbfinal gegen Nadal</a> – BLICK</li>
+<li><a href="https://www.neueschweizerzeitung.ch/chinas-rover-zhurong-schickt-ein-selfie-vom-mars-mar/">Chinas Rover Zhurong schickt ein Selfie vom Mars Mar</a> – Neue Schweizer Zeitung</li>
+<li><a href="https://www.srf.ch/news/international/widerspruch-aus-bruessel-eu-hat-schweizer-covid-zertifikat-noch-nicht-anerkannt">Widerspruch aus Brüssel - EU hat Schweizer Covid-Zertifikat noch nicht anerkannt</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/hier-kannst-du-die-em-sause-mitverfolgen-143811345584">"Italien hat den Sieg verdient"</a> – 20 Minuten</li>
+<li><a href="https://www.srf.ch/news/schweiz/oeffnungsschritte-vom-28-juni-hat-sie-der-mut-verlassen-herr-bundesrat">Öffnungsschritte vom 28. Juni - Hat Sie der Mut verlassen, Herr Bundesrat?</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/bundesrat-trifft-russischen-praesidenten-putin-694215035140">Gipfeltreffen : Bundesrat trifft russischen Präsidenten Putin</a> – 20 Minuten</li>
+<li><a href="https://www.srf.ch/news/schweiz/kommenden-mittwoch-in-genf-parmelin-und-cassis-treffen-auch-russlands-praesidenten-putin">Kommenden Mittwoch in Genf - Parmelin und Cassis treffen auch Russlands Präsidenten Putin</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.gmx.ch/magazine/news/coronavirus/coronavirus-pandemie-rollt-grippewelle-schweiz-35896010">Nach Coronavirus-Pandemie: Rollt eine Grippewelle über die Schweiz?</a> – GMX.ch</li>
+<li><a href="https://www.srf.ch/news/schweiz/das-neueste-zur-coronakrise-who-in-einem-jahr-sollen-70-prozent-der-menschen-geimpft-sein">Das Neueste zur Coronakrise - WHO: In einem Jahr sollen 70 Prozent der Menschen geimpft sein</a> – Schweizer Radio und Fernsehen (SRF)</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-12">Samstag 12 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-12" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.gamers.at/the-crew-2-infos-zur-season-3-waehrend-der-ubisoft-forward/">Infos zur Season 3 während der Ubisoft Forward</a> – Gamers.at</li>
+<li><a href="https://www.srf.ch/sport/fussball/uefa-euro-2020/spielabbruch-gegen-finnland-eriksen-nach-kollaps-im-spital-wach-und-stabil">Spielabbruch gegen Finnland - Eriksen nach Kollaps im Spital: "Wach und stabil"</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.mobiflip.de/shortnews/apple-ipados-15-iphone-apps-querformat/">Apple iPadOS 15: iPhone-Apps im Querformat möglich</a> – mobiFlip</li>
+<li><a href="https://www.srf.ch/sport/fussball/uefa-euro-2020/stimmen-zum-1-1-gegen-wales-sommer-liessen-die-fussballerischen-qualitaeten-links-liegen">Stimmen zum 1:1 gegen Wales - Sommer: "Liessen die fussballerischen Qualitäten links liegen"</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/zwei-verletzte-bei-messerstecherei-249505146486">Beim Birsig-Parkplatz : Zwei Verletzte bei Messerstecherei</a> – 20 Minuten</li>
+<li><a href="https://www.blick.ch/people-tv/royals/queen-scherzt-beim-g7-familienfoto-soll-man-jetzt-so-tun-als-wuerde-man-sich-vergnuegen-id16594911.html">Queen scherzt beim G7-"Familienfoto" und bringt alle zum Lachen</a> – BLICK</li>
+<li><a href="https://www.srf.ch/sport/mehr-sport/rad/7-etappe-der-tour-de-suisse-uran-gewinnt-deutlich-und-rueckt-carapaz-auf-die-pelle">7. Etappe der Tour de Suisse - Uran gewinnt deutlich und rückt Carapaz auf die Pelle</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/sport/fussball/uefa-euro-2020/kein-nati-sieg-zum-em-auftakt-ein-roter-turban-eine-auswechslung-und-der-var-schocken-die-nati">Kein Nati-Sieg zum EM-Auftakt - Ein roter Turban, eine Auswechslung und der VAR schocken die Nati</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.games.ch/broken-pieces/news/erscheint-2022-trailer-psychologischer-jjhV/">Broken Pieces erscheint 2022</a> – Games.ch</li>
+<li><a href="https://www.blick.ch/sport/rad/abfahrt-mit-100-km-h-maeder-schaffts-aufs-tour-podest-carapaz-bleibt-leader-id16594833.html">Tour de Suisse: Gino Mäder Dritter - Rigoberto Uran siegt in Andermatt</a> – BLICK</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-13">Sonntag 13 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-13" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.neueschweizerzeitung.ch/sehen-sie-die-massiven-geparkten-mondraketen-der-nasa-booster-und-alles/">Sehen Sie die massiven geparkten Mondraketen der NASA, Booster und alles</a> – Neue Schweizer Zeitung</li>
+<li><a href="https://www.play3.de/2021/06/13/marvels-avengers-cosmic-cube-und-die-war-for-wakanda-erweiterung-vorgestellt/">Marvels Avengers: Cosmic Cube und die War for Wakanda-Erweiterung vorgestellt</a> – play3.de</li>
+<li><a href="https://www.20min.ch/story/kritiker-werfen-sommaruga-verfehlte-abstimmungsagenda-vor-843821206069">Gescheitertes CO2-Gesetz : Kritiker werfen Sommaruga «verfehlte Abstimmungsagenda» vor</a> – 20 Minuten</li>
+<li><a href="https://www.srf.ch/sport/tennis/grand-slam-turniere/sieg-an-den-french-open-djokovic-mit-grosser-wende-gegen-tsitsipas-zum-19-major-titel">Sieg an den French Open - Djokovic mit grosser Wende gegen Tsitsipas zum 19. Major-Titel</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/das-sagt-der-bundesrat-zur-abstimmung-489605496745">Sommaruga zum CO2-Nein : «Die Vorlage war vermutlich überladen»</a> – 20 Minuten</li>
+<li><a href="https://www.blick.ch/politik/pestizid-initiativen-gebodigt-an-den-bauern-kommt-niemand-vorbei-id16597214.html">Pestizid-Initiativen gebodigt: An den Bauern kommt niemand vorbei</a> – BLICK</li>
+<li><a href="https://www.blick.ch/people-tv/tv/schon-haenni-und-luft-verliebten-sich-in-der-tanz-sendung-joachim-llambi-erklaert-den-liebes-zauber-von-lets-dance-id16596935.html">Hänni und Luft auf Wolke 7: Joachim Llambi über die Liebe bei "Let's Dance"</a> – BLICK</li>
+<li><a href="https://www.srf.ch/news/abstimmungen-13-juni-2021/trinkwasser-initiative/abstimmungen-13-juni-trinkwasser-initiative-klar-verworfen">Abstimmungen 13. Juni - Trinkwasser-Initiative klar verworfen</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/news/abstimmungen-13-juni-2021/co2-gesetz/abstimmungen-13-juni-co2-gesetz-erleidet-schiffbruch">Abstimmungen 13. Juni - CO2-Gesetz erleidet Schiffbruch</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/news/abstimmungen-13-juni-2021/covid-19-gesetz/erleichterung-und-kampfansage-ja-zum-covid-19-gesetz-erleichterung-bei-befuerwortern">Erleichterung und Kampfansage - Ja zum Covid-19-Gesetz: Erleichterung bei Befürwortern</a> – Schweizer Radio und Fernsehen (SRF)</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-14">Montag 14 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-14" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.blick.ch/wirtschaft/werbetrick-mit-raeumungsrabatten-wie-bei-voegele-shoes-schuh-und-modekette-la-halle-lockt-mit-schliessungsverkauf-id16599801.html">Räumungsrabatte und Schliessungstrick: Wie Vögele Shoes lockt auch La Halle</a> – BLICK</li>
+<li><a href="https://www.blick.ch/sport/fussball/em/italo-legende-alessandro-altobelli-vor-nati-knueller-die-schweiz-hat-potenzial-fuer-eine-em-ueberraschung-id16600379.html">Euro 2020: Weltmeister Alessandro Altobelli über die Schweizer Nati</a> – BLICK</li>
+<li><a href="https://www.blick.ch/ausland/biden-trifft-putin-in-genf-heute-landet-der-us-praesident-in-der-schweiz-id16600300.html">Biden trifft Putin in Genf: Heute landet der US-Präsident in der Schweiz</a> – BLICK</li>
+<li><a href="https://www.20min.ch/story/stars-wie-shia-labeouf-und-angelina-jolie-mit-ex-lovers-gesichtet-307319891715">Warum Stars wie Shia LaBeouf und Angelina Jolie ihre Ex-Lovers zurück wollen</a> – 20 Minuten</li>
+<li><a href="https://www.srf.ch/news/international/westliche-militaerallianz-die-nato-repariert-sich-selber">Westliche Militärallianz - Die Nato repariert sich selber</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/news/abstimmungen-13-juni-2021/co2-gesetz/klimapolitik-der-schweiz-wie-weiter-ohne-co2-gesetz">Klimapolitik der Schweiz - Wie weiter ohne CO2-Gesetz?</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.fitbook.de/health/omega-3-fettsaeure-potenzial-tumore-zu-zerstoeren">Omega-3-Fettsäure hat Potenzial, Tumore zu zerstören</a> – FITBOOK</li>
+<li><a href="https://www.srf.ch/news/abstimmungen-13-juni-2021/co2-gesetz/stadt-land-graben-co2-gesetz-wie-tief-ist-der-graben-zwischen-stadt-und-land">Stadt-Land-Graben - CO2-Gesetz: Wie tief ist der Graben zwischen Stadt und Land?</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/much-wow-kindergaertnerin-verdient-mit-hundebild-millionen-209956688201">Doge-Meme für vier Millionen Dollar als NFT verkauft bei Auktion</a> – 20 Minuten</li>
+<li><a href="https://www.20min.ch/story/dank-doppelpack-von-schick-tschechien-gewinnt-2-0-gegen-schottland-658786867820">Dank Doppelpack von Schick – Tschechien gewinnt 2:0 gegen Schottland</a> – 20 Minuten</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-15">Dienstag 15 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-15" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.srf.ch/sport/fussball/uefa-euro-2020/eigentor-entscheidet-spiel-deutschland-spielt-hummels-trifft-frankreich-siegt">Eigentor entscheidet Spiel - Deutschland spielt, Hummels trifft, Frankreich siegt</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/aktivist-landet-mit-fallschirm-in-stadion-und-verletzt-dabei-eine-arbeiterin-174935067422">Gefährliche Aktion : Aktivist landet mit Motorschirm in Stadion und verletzt dabei TV-Angestellte</a> – 20 Minuten</li>
+<li><a href="https://www.wirtschaftsblatt-bg.com/gesundheit/konnen-herpesviren-die-alzheimer-krankheit-verursachen/">Können Herpesviren die Alzheimer-Krankheit verursachen?</a> – Bulgarisches Wirtschaftsblatt</li>
+<li><a href="https://www.20min.ch/story/deutsche-bundeslaender-wollen-corona-regeln-fuer-auslandsreisen-verschaerfen-989028534589">Wegen Delta-Variante : Deutsche Bundesländer wollen Corona-Regeln für Auslandsreisen verschärfen</a> – 20 Minuten</li>
+<li><a href="https://www.srf.ch/news/panorama/terraoil-schwindel-debakel-fuer-aktionaere-70-millionen-loesen-sich-in-luft-auf">Terraoil-Schwindel - Debakel für Aktionäre: 70 Millionen lösen sich in Luft auf</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/sport/fussball/uefa-euro-2020/3-0-dank-spaeten-toren-ronaldo-laesst-rekorde-purzeln-portugal-schlaegt-ungarn">3:0 dank späten Toren - Ronaldo lässt Rekorde purzeln: Portugal schlägt Ungarn</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/volles-haus-in-budapest-wie-startet-der-titelverteidiger-in-die-em-338999175295">Rekordspieler Ronaldo : Drei Treffer kurz vor Schluss – Portugal gewinnt gegen Ungarn</a> – 20 Minuten</li>
+<li><a href="https://www.blick.ch/politik/alt-bundesrat-pascal-couchepin-ueber-den-goessi-ruecktritt-und-dessen-konsequenzen-die-co-abstimmung-war-nicht-zentral-fuer-unsere-partei-id16602774.html">Alt Bundesrat Pascal Couchepin zum Rücktritt von Petra Gössi</a> – BLICK</li>
+<li><a href="https://www.games.ch/geek-news/news/tiny-tinas-wonderlands-fan-jjjaf/">Tiny Tina's Wonderlands: Viele Fan-Produkte zum Spiel geplant</a> – Games.ch</li>
+<li><a href="https://www.20min.ch/story/die-nati-hofft-gegen-italien-auf-den-juventus-fluch-357693161232">Spieler treffen nur ins eigene Tor</a> – 20 Minuten</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-16">Mittwoch 16 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-16" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.20min.ch/story/corona-impfstoff-von-curevac-verfehlt-wirksamkeitsziele-419062332547">Zwischenanalyse : Corona-Impfstoff von Curevac verfehlt Wirksamkeitsziele</a> – 20 Minuten</li>
+<li><a href="https://www.20min.ch/story/ueberwachungskamera-hielt-den-absturz-der-gondel-von-stresa-fest-913228587988">Unglück am Monte Mottarone</a> – 20 Minuten</li>
+<li><a href="https://www.srf.ch/news/schweiz/urteil-gegen-straftaeter-brian-obergericht-verurteilt-brian-zu-6-jahren-haft-ohne-verwahrung">Urteil gegen Straftäter Brian - Obergericht verurteilt Brian zu 6 Jahren Haft - ohne Verwahrung</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/sport/tennis/atp-tour/achtelfinal-in-halle-federer-baut-ab-und-unterliegt-starkem-auger-aliassime">Achtelfinal in Halle - Federer baut ab und unterliegt starkem Auger-Aliassime</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/briten-zittern-vor-delta-variante-und-was-macht-die-schweiz-697515903688">Schweiz beobachtet Corona-Delta-Variante – bleibt aber bei Impfstrategie</a> – 20 Minuten</li>
+<li><a href="https://www.blick.ch/ausland/who-ist-alarmiert-corona-variante-lambda-in-lateinamerika-id16605297.html">Corona-Variante Lambda in Lateinamerika</a> – BLICK</li>
+<li><a href="https://www.games.ch/legend-zelda-skyward-hd/news/weitere-switch-spiele-35-jjjQ/">Keine weiteren Switch-Spiele zum 35. Geburtstag von Zelda</a> – Games.ch</li>
+<li><a href="https://www.neueschweizerzeitung.ch/entdecken-sie-die-groessten-rotierenden-strukturen-des-universums-faszinierende-kosmische-filamente-in-denen-galaxien-eine-art-relativer-staub-sind/">Entdecken Sie die größten rotierenden Strukturen des Universums - faszinierende kosmische Filamente, in denen Galaxien eine Art relativer Staub sind</a> – Neue Schweizer Zeitung</li>
+<li><a href="https://www.20min.ch/story/australischer-tv-star-leidet-nach-tiktok-beauty-hack-an-sehverlust-567311957974">Tilly Whitfield : Australischer TV-Star leidet nach Tiktok-Beauty-Hack an Sehverlust</a> – 20 Minuten</li>
+<li><a href="https://www.20min.ch/story/wie-soll-parmelin-mit-autokrat-putin-reden-369716625756">Gipfeltreffen in Genf - Wie soll Guy Parmelin mit Wladimir Putin reden?</a> – 20 Minuten</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-17">Donnerstag 17 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-17" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.neueschweizerzeitung.ch/nasa-die-erde-faengt-eine-beispiellose-waermemenge-durch-den-klimawandel-ein/">NASA: Die Erde fängt eine „beispiellose“ Wärmemenge durch den Klimawandel ein</a> – Neue Schweizer Zeitung</li>
+<li><a href="https://www.srf.ch/news/schweiz/forschung-an-corona-impfstoff-ein-basler-impfstoff-soll-corona-mutanten-besser-erkennen">Forschung an Corona-Impfstoff - Ein Basler Impfstoff soll Corona-Mutanten besser erkennen</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.blick.ch/schweiz/polizei-bestaetigt-einsatz-maschine-beim-flugplatz-birrfeld-ag-abgestuerzt-id16609046.html">Unglück im Aargau: Flugzeugabsturz am Flugplatz Birrfeld</a> – BLICK</li>
+<li><a href="https://www.werra-rundschau.de/hessen/universum-weltall-geheimnisvoll-mysterioes-filamente-rotation-drehen-galaxien-staubkoernchen-zr-90808542.html">Universum: Forschende entdecken riesige rotierende Strukturen - Galaxien sind dagegen „wie Staubkörnchen“</a> – werra-rundschau.de</li>
+<li><a href="https://www.srf.ch/sport/eishockey/national-league/fan-umfrage-beruecksichtigt-national-league-befindet-ueber-auslaenderregel-und-ligagroesse">Fan-Umfrage berücksichtigt - National League befindet über Ausländerregel und Ligagrösse</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/news/schweiz/biodiversitaet-stickstoff-bedroht-schweizer-schmetterlingswelt">Biodiversität - Stickstoff bedroht Schweizer Schmetterlingswelt</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.neueschweizerzeitung.ch/facebook-forscher-sagen-dass-sie-deepfakes-erkennen-koennen-und-woher-sie-kommen-npr/">Facebook-Forscher sagen, dass sie Deepfakes erkennen können und woher sie kommen: NPR</a> – Neue Schweizer Zeitung</li>
+<li><a href="https://www.srf.ch/news/schweiz/urteil-zu-coronakredit-betrug-mein-arzt-inhaber-ich-wollte-nur-die-katastrophe-abwenden">Urteil zu Coronakredit-Betrug - "Mein Arzt"-Inhaber: "Ich wollte nur die Katastrophe abwenden"</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.blick.ch/sport/tennis/tennis-hammer-nadal-sagt-fuer-wimbledon-und-olympia-ab-id16607740.html">Tennis-Hammer: Rafael Nadal sagt für Wimbledon und Olympia ab!</a> – BLICK</li>
+<li><a href="https://www.blick.ch/wirtschaft/blick-lueftet-das-geheimnis-um-gipfel-praesent-bundesrat-beschenkt-praesidenten-der-usa-und-russland-mit-dieser-schweizer-uhr-id16607502.html">Gipfel-Treffen in Genf: Biden und Putin kriegen vom Bundesrat eine Tissot</a> – BLICK</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-18">Freitag 18 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-18" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.srf.ch/news/schweiz/hagel-und-intensiver-regen-heftige-gewitter-erfassen-das-berner-oberland-und-zuerich">Hagel und intensiver Regen - Heftige Gewitter erfassen das Berner Oberland und Zürich</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/philipp-mickenbecker-in-badewanne-begraben-840672045916">Philipp Mickenbecker in Badewanne begraben</a> – 20 Minuten</li>
+<li><a href="https://www.20min.ch/story/im-inselduell-wollen-die-three-lions-den-zweiten-sieg-796451979689">Kein Sieger im Insel-Duell zwischen England und Schottland</a> – 20 Minuten</li>
+<li><a href="https://www.20min.ch/story/billie-eilishs-freund-reagiert-auf-seine-problematischen-posts-100764583180">Billie Eilishs Freund schämt sich für problematische Aussagen</a> – 20 Minuten</li>
+<li><a href="https://www.20min.ch/story/heftige-gewitter-ziehen-ueber-schweiz-bund-ruft-warnstufe-4-aus-615843018563">Luzern und Berner Oberland</a> – 20 Minuten</li>
+<li><a href="https://www.games.ch/baldurs-gate-3/news/verlaesst-jahr-nicht-early-kaap/">Baldur's Gate 3 verlässt in diesem Jahr nicht den Early-Access</a> – Games.ch</li>
+<li><a href="https://telebasel.ch/2021/06/18/jede-dritte-impf-nebenwirkung-wird-als-schwerwiegend-eingestuft/">Jede dritte Impf-Nebenwirkung wird als schwerwiegend eingestuft</a> – Telebasel</li>
+<li><a href="https://www.blick.ch/schweiz/zentralschweiz/heftiger-crash-in-ballwil-lu-s-bahn-zermalmt-baustellen-dumper-arbeiter-51-verletzt-id16611120.html">Ballwil, Luzern: S-Bahn rammt Baustellen-Dumper auf Bahnübergang</a> – BLICK</li>
+<li><a href="https://telebasel.ch/2021/06/18/intticker210618/?channel=8382">Portugal riegelt ganz Lissabon wegen Delta-Variante ab</a> – Telebasel</li>
+<li><a href="https://www.fnp.de/hessen/universum-weltall-geheimnisvoll-mysterioes-filamente-rotation-drehen-galaxien-staubkoernchen-zr-90808542.html">Universum: Forschende entdecken riesige rotierende Strukturen - Galaxien sind dagegen „wie Staubkörnchen“</a> – Frankfurter Neue Presse</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-19">Samstag 19 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-19" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.srf.ch/news/schweiz/das-neueste-zur-coronakrise-tausende-brasilianer-protestieren-gegen-bolsonaros-corona-politik">Das Neueste zur Coronakrise - Tausende Brasilianer protestieren gegen Bolsonaros Corona-Politik</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/sport/fussball/uefa-euro-2020/2-spiel-der-gruppe-f-deutschland-schlaegt-portugal-nach-wildem-schlagabtausch">2. Spiel der Gruppe F - Deutschland schlägt Portugal nach wildem Schlagabtausch</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://telebasel.ch/2021/06/19/staatsanwaltschaft-klagt-weber-an/">Staatsanwaltschaft klagt Weber an</a> – Telebasel</li>
+<li><a href="https://www.srf.ch/sport/fussball/uefa-euro-2020/vor-showdown-gegen-die-tuerkei-petkovic-stehen-nicht-zum-ersten-mal-unter-druck">Vor Showdown gegen die Türkei - Petkovic: "Stehen nicht zum ersten Mal unter Druck"</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.blick.ch/people-tv/royals/enthuellungsinterview-nach-mobbing-skandal-jetzt-will-chrissy-teigen-bei-oprah-auspacken-id16613564.html">Chrissy Teigen will bei Oprah Winfrey auspacken</a> – BLICK.CH</li>
+<li><a href="https://www.blick.ch/schweiz/zahlreiche-einsaetze-wegen-gummibooten-in-not-polizei-muss-gekenterte-aareboeoetler-retten-id16613535.html">Polizei rettet Aareböötler aus dem Wasser</a> – BLICK.CH</li>
+<li><a href="https://www.blick.ch/schweiz/westschweiz/er-kam-nicht-bei-den-angehoerigen-an-velofahrer-68-auf-tour-im-jura-verschwunden-id16613473.html">Velofahrer auf Tour im Jura verschwunden</a> – BLICK</li>
+<li><a href="https://www.srf.ch/sport/motorsport/formel-1/qualifying-zum-gp-frankreich-verstappen-holt-pole-position-vor-den-mercedes-piloten">Qualifying zum GP Frankreich - Verstappen holt Pole Position vor den Mercedes-Piloten</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/verstappen-holt-sich-die-pole-position-in-le-castellet-435486258084">Kein Exploit von Alfa-Sauber</a> – 20 Minuten</li>
+<li><a href="https://www.blick.ch/schweiz/bern/crash-mit-auto-velofahrer-nach-unfall-in-biel-verstorben-id16613098.html">Velofahrer stirbt nach Unfall in Biel</a> – BLICK.CH</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-20">Sonntag 20 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-20" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.neueschweizerzeitung.ch/der-erste-mario-golf-test-super-rush-ist-jetzt-verfuegbar/">Der erste Mario Golf Test: Super Rush ist jetzt verfügbar</a> – Neue Schweizer Zeitung</li>
+<li><a href="https://www.srf.ch/news/international/regionalwahlen-in-frankreich-parteien-von-macron-und-le-pen-verlieren-die-erste-runde">Regionalwahlen in Frankreich - Parteien von Macron und Le Pen verlieren die erste Runde</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/news/international/46-millionen-haben-gewaehlt-niedrige-wahlbeteiligung-bei-frankreichs-regionalwahlen">46 Millionen haben gewählt - Niedrige Wahlbeteiligung bei Frankreichs Regionalwahlen</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.blick.ch/people-tv/international/liebeserklaerung-von-laura-mueller-an-michael-wendler-zum-1-hochzeitstag-ich-liebe-es-deine-frau-zu-sein-id16615290.html">Laura Müller postet Liebeserklärung an Michael Wendler zum 1. Hochzeitstag</a> – BLICK</li>
+<li><a href="https://www.20min.ch/story/wir-wurden-fuer-kleinigkeiten-kritisiert-die-nicht-wichtig-sind-195573420750">Stimmen zum Türkei-Spiel : «Wir wurden für Kleinigkeiten kritisiert, die nicht wichtig sind»</a> – 20 Minuten</li>
+<li><a href="https://www.srf.ch/news/international/46-millionen-koennen-waehlen-niedrige-wahlbeteiligung-bei-frankreichs-regionalwahlen">46 Millionen können wählen - Niedrige Wahlbeteiligung bei Frankreichs Regionalwahlen</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.blick.ch/sport/fussball/nati/xhaka-nach-sieg-gegen-tuerkei-die-leute-wollen-diese-mannschaft-kaputt-machen-id16615668.html">EM 2020 / Nati: Die Stimmen von Xhaka, Shaqiri, Petkovic zum Türkei-Spiel</a> – BLICK Sport</li>
+<li><a href="https://www.srf.ch/sport/fussball/uefa-euro-2020/letztes-spiel-der-gruppe-a-auch-der-zweite-anzug-passt-italien-siegt-1-0-gegen-wales">Letztes Spiel der Gruppe A - Auch der zweite Anzug passt: Italien siegt 1:0 gegen Wales</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.macerkopf.de/2021/06/20/prime-day2021-echo-dot-show/">Prime Day 2021: Echo, Echo Dot, Echo Show, Blink mini und Co. bereits im Preis reduziert</a> – Macerkopf - Apple News aus Cupertino</li>
+<li><a href="https://www.20min.ch/story/prinz-charles-will-archie-den-prinzen-titel-verwehren-179473952180">Aus finanziellen Gründen : Prinz Charles will Archie den Prinzen-Titel verwehren</a> – 20 Minuten</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-21">Montag 21 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-21" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.blick.ch/politik/rueckenschuss-fuer-amherd-gefaehrdet-kritik-von-ex-armeechef-blattmann-den-kampfjet-kauf-id16618412.html">Ex-Armeechef Blattmann attackiert Amherds Kampfjet-Pläne</a> – BLICK.CH</li>
+<li><a href="https://www.srf.ch/sport/fussball/uefa-euro-2020/programm-in-der-uebersicht-das-laeuft-am-dienstag-an-der-euro-2">Programm in der Übersicht - Das läuft am Dienstag an der EURO</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://telebasel.ch/2021/06/21/die-schweiz-steht-im-em-achtelfinal/">Die Schweiz steht im EM-Achtelfinal!</a> – Telebasel</li>
+<li><a href="https://telebasel.ch/2021/06/21/e-bike-fahrer-geraet-unter-lastwagen-und-wird-schwer-verletzt/">E-Bike-Fahrer gerät unter Lastwagen und wird schwer verletzt</a> – Telebasel</li>
+<li><a href="https://www.20min.ch/story/nach-verlust-seiner-ehren-titel-stimmte-wuetender-harry-oprah-talk-zu-399999034909">Nur 24 Stunden nach dem Verlust seiner Militär-Titel stimmte Prinz Harry dem Oprah-Interview zu</a> – 20 Minuten</li>
+<li><a href="https://www.srf.ch/news/schweiz/endspurt-kampfjetbeschaffung-amherd-will-den-ferrari-der-luefte-kaufen">Endspurt Kampfjetbeschaffung - Amherd will den "Ferrari der Lüfte" kaufen</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.blick.ch/schweiz/ostschweiz/frontal-crash-in-frauenfeld-lieferwagen-knallt-in-gegenverkehr-2-verletzte-id16618058.html">Frauenfeld: Lieferwagen gerät in Gegenverkehr - Lenker schwer verletzt</a> – BLICK</li>
+<li><a href="https://www.srf.ch/news/international/pressekonferenz-nach-wahlsieg-irans-neuer-praesident-lehnt-treffen-mit-biden-ab">Pressekonferenz nach Wahlsieg - Irans neuer Präsident lehnt Treffen mit Biden ab</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/sport/fussball/uefa-euro-2020/rating-zum-tuerkei-spiel-sommer-zuber-und-shaqiri-ueberzeugten-am-meisten">Rating zum Türkei-Spiel - Sommer, Zuber und Shaqiri überzeugten am meisten</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/sport/fussball/uefa-euro-2020/nati-coach-mit-gutem-haendchen-wie-shaqiri-seferovic-und-co-petkovics-vertrauen-zurueckzahlten">Nati-Coach mit gutem Händchen - Wie Shaqiri, Seferovic und Co. Petkovics Vertrauen zurückzahlten</a> – Schweizer Radio und Fernsehen (SRF)</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-22">Dienstag 22 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-22" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.srf.ch/sport/fussball/uefa-euro-2020/achtelfinal-an-der-euro-fuer-nati-wird-duell-mit-sieger-der-gruppe-f-realistischer">Achtelfinal an der EURO - Für Nati wird Duell mit Sieger der Gruppe F realistischer</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/warum-sollten-sich-kinder-und-teenager-ueberhaupt-impfen-lassen-498575040336">Offizielle Empfehlung des BAG</a> – 20 Minuten</li>
+<li><a href="https://www.20min.ch/story/de-niros-absage-an-federer-bricht-rekorde-570505103992">Werbevideo mit Robert de Niro und Roger Federer geht auf YouTube viral</a> – 20 Minuten</li>
+<li><a href="https://www.games.ch/zombie-army-4-dead-war/news/abaddon-asylum-veroeffentlicht-kaaia/">Abaddon Asylum für Zombie Army 4: Dead War veröffentlicht</a> – Games.ch</li>
+<li><a href="https://www.blick.ch/people-tv/royals/unfallhelfer-spricht-ueber-ihre-todesnacht-das-waren-prinzessin-dianas-letzten-worte-id16620826.html">Prinzessin Diana: Unfallhelfer enthüllt ihre letzten Worte</a> – BLICK.CH</li>
+<li><a href="https://www.businessinsider.de/wissenschaft/das-legendaere-nasa-teleskop-hubble-hat-technische-probleme/">Das legendäre NASA-Teleskop Hubble hat technische Probleme</a> – Business Insider Deutschland</li>
+<li><a href="https://www.srf.ch/news/schweiz/das-neueste-zur-coronakrise-jugendliche-koennen-sich-im-kanton-zuerich-ab-montag-impfen-lassen">Das Neueste zur Coronakrise - Jugendliche können sich im Kanton Zürich ab Montag impfen lassen</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/news/schweiz/das-neueste-zur-coronakrise-weltgesundheitsorganisation-besorgt-ueber-lockerungen-an-em">Das Neueste zur Coronakrise - Weltgesundheitsorganisation "besorgt" über Lockerungen an EM</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.blick.ch/sport/wieder-knall-am-leutschenbach-tennis-kommentator-stefan-buerer-verlaesst-das-srf-id16619592.html">Wieder Knall am Leutschenbach: Auch Stefan Bürer verlässt das SRF</a> – BLICK.CH</li>
+<li><a href="https://www.20min.ch/story/ihr-seid-peinlich-schaemt-euch-uefa-verbietet-regenbogen-arena-345873771282">Symbol gegen Homophobie bei der EM</a> – 20 Minuten</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-23">Mittwoch 23 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-23" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.srf.ch/news/schweiz/hagel-und-intensiver-regen-unwetter-schweizweit-bahnhof-am-flughafen-zuerich-ist-gesperrt">Hagel und intensiver Regen - Unwetter schweizweit: Bahnhof am Flughafen Zürich ist gesperrt</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/sport/fussball/uefa-euro-2020/2-2-an-der-em-gegen-frankreich-benzema-und-ronaldo-treffen-doppelt-portugal-im-achtelfinal">2:2 an der EM gegen Frankreich - Benzema und Ronaldo treffen doppelt: Portugal im Achtelfinal</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/sport/fussball/uefa-euro-2020/jetzt-wartet-der-weltmeister-schweizer-nati-trifft-im-em-achtelfinal-auf-frankreich">Jetzt wartet der Weltmeister - Schweizer Nati trifft im EM-Achtelfinal auf Frankreich</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.blick.ch/people-tv/schweiz/tamy-glauser-nach-trennung-von-dominique-rinderknecht-ich-bin-froh-dass-ihr-verlobter-ein-mann-ist-id16624700.html">Tamy Glauser spricht über Dominique Rinderknechts Verlobung</a> – BLICK</li>
+<li><a href="https://www.srf.ch/sport/fussball/uefa-euro-2020/3-spiel-der-gruppe-e-schweden-mit-forsberg-doppelpack-gegen-polen-siegreich">3. Spiel der Gruppe E - Schweden mit Forsberg-Doppelpack gegen Polen siegreich</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/florian-silbereisen-wird-neuer-dsds-juror-420508240270">DSDS : Florian Silbereisen wird Bohlen-Nachfolger</a> – 20 Minuten</li>
+<li><a href="https://www.srf.ch/sport/tennis/wta-tour/wta-rasenturnier-in-eastbourne-golubic-entscheidet-schweizer-duell-gegen-bencic-fuer-sich">WTA-Rasenturnier in Eastbourne - Golubic entscheidet Schweizer Duell gegen Bencic für sich</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://telebasel.ch/2021/06/23/grosser-rat-schraenkt-bettelei-in-basel-stark-ein/">Grosser Rat schränkt Bettelei in Basel stark ein</a> – Telebasel</li>
+<li><a href="https://www.blick.ch/schweiz/sust-warnt-vor-unfallgefahr-52-schweizer-seilbahnen-haben-ein-sicherheitsdefizit-id16619595.html">Mindestens 52 Schweizer Seilbahnen haben ein Sicherheitsdefizit</a> – BLICK</li>
+<li><a href="https://www.srf.ch/news/schweiz/das-neueste-zur-coronakrise-eu-gesundheitsbehoerde-erwartet-ausbreitung-der-delta-variante">Das Neueste zur Coronakrise - EU-Gesundheitsbehörde erwartet Ausbreitung der Delta-Variante</a> – Schweizer Radio und Fernsehen (SRF)</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-24">Donnerstag 24 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-24" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.neueschweizerzeitung.ch/samsung-galaxy-z-fold-3-und-z-flip-3-in-einem-neuen-leak-enthuellt/">Samsung Galaxy Z Fold 3 und Z Flip 3 in einem neuen Leak enthüllt</a> – Neue Schweizer Zeitung</li>
+<li><a href="https://www.srf.ch/news/international/150-bis-200-verletzte-vermutet-tornado-verwuestet-mehrere-kleinstaedte-in-suedtschechien">150 bis 200 Verletzte vermutet - Tornado verwüstet mehrere Kleinstädte in Südtschechien</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/sport/fussball/super-league/gc-trainiert-mit-neuem-coach-contini-die-identifikation-ist-extrem-wichtig">GC trainiert mit neuem Coach - Contini: "Die Identifikation ist extrem wichtig"</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/ich-bin-ueberfordert-mit-der-gesamtsituation-721644825365">Florian Silbereisen über DSDS-Job</a> – 20 Minuten</li>
+<li><a href="https://www.games.ch/dungeon-of-naheulbeuk/news/the-amulet-chaos-ab-heute-kaob/">The Dungeon of Naheulbeuk: The Amulet of Chaos ab heute für Konsolen</a> – Games.ch</li>
+<li><a href="https://www.blick.ch/auto/tests/vw-id-4-gtx-im-ersten-test-so-faehrt-sich-der-elektro-gti-id16621310.html">VW ID.4 GTX: Alle Infos und die erste Kurztest-Fahrt im Elektro-GTI</a> – BLICK</li>
+<li><a href="https://www.20min.ch/story/wir-hatten-erfahrenere-und-qualifiziertere-trainer-kandidaten-als-contini-566291908661">GC-Sportchef Seyi Olofinjana : «Wir hatten erfahrenere und qualifiziertere Trainer-Kandidaten als Contini»</a> – 20 Minuten</li>
+<li><a href="https://www.20min.ch/story/tonnenschwerer-baum-kracht-auf-fahrendes-auto-einer-frau-46-928952434497">Schock in Frauenfeld: Tonnenschwerer Baum kracht auf fahrendes Auto einer Frau (46)</a> – 20 Minuten</li>
+<li><a href="https://www.neueschweizerzeitung.ch/typ-2-diabetes-fruehstuecksnahrung-wie-haferflocken-koennen-den-blutzuckerspiegel-verbessern/">Typ-2-Diabetes: Frühstücksnahrung wie Haferflocken können den Blutzuckerspiegel verbessern</a> – Neue Schweizer Zeitung</li>
+<li><a href="https://www.games.ch/pes-2022/news/naechsten-monat-enthuellt-kamg/">PES 2022 wird nächsten Monat enthüllt</a> – Games.ch</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-25">Freitag 25 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-25" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.blick.ch/sport/fussball/em/klein-sommer-mit-franzosen-muetze-dieser-bub-wird-am-montag-unser-rekord-goalie-id16628452.html">Euro 2020: Yann Sommer wird gegen Frankreich Rekord-Nati-Goalie</a> – BLICK Sport</li>
+<li><a href="https://www.neueschweizerzeitung.ch/windows-11-wird-in-der-lage-sein-android-apps-seitlich-zu-laden/">Windows 11 wird in der Lage sein, Android-Apps seitlich zu laden</a> – Neue Schweizer Zeitung</li>
+<li><a href="https://www.20min.ch/story/ex-polizist-im-george-floyd-prozess-zu-22-5-jahren-haft-verurteilt-204383680898">Derek Chauvin : Ex-Polizist im George-Floyd-Prozess zu 22 Jahren Haft verurteilt</a> – 20 Minuten</li>
+<li><a href="https://www.srf.ch/news/international/strafmass-verkuendet-fall-george-floyd-22-5-jahre-haft-fuer-ex-polizist-chauvin">Strafmass verkündet - Fall George Floyd: 22.5 Jahre Haft für Ex-Polizist Chauvin</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://telebasel.ch/2021/06/25/mann-24-toetet-drei-menschen-durch-messerattacke-in-bayern/">Mann (24) tötet drei Menschen durch Messerattacke in Bayern</a> – Telebasel</li>
+<li><a href="https://www.srf.ch/news/schweiz/zollverwaltung-in-der-kritik-zollbehoerde-buesste-leute-ohne-rechtliche-grundlage">Zollverwaltung in der Kritik - Zollbehörde büsste Leute ohne rechtliche Grundlage</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/sport/fussball/uefa-euro-2020/das-sagt-frankreichs-presse-l-equipe-shaqiri-ist-die-groesste-bedrohung">Das sagt Frankreichs Presse - L'Equipe: "Shaqiri ist die grösste Bedrohung"</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/messerstecherei-in-wuerzburg-mehrere-personen-offenbar-tot-666800094640">Deutschland : Angreifer sticht in Würzburg auf Passanten ein – 3 Tote</a> – 20 Minuten</li>
+<li><a href="https://www.fr.de/ratgeber/gesundheit/corona-news-universal-impfstoff-coronavirus-coronaviren-sars-cov-tierversuch-experiment-90822618.html">Corona: Super-Impfstoff - Studie zeigt erste Erfolge</a> – Frankfurter Rundschau</li>
+<li><a href="https://www.merkur.de/welt/corona-impfstoff-kombination-forschung-viren-studie-erfolge-test-mutationen-ergebnis-90824887.html">Corona-Mutationen: Super-Impfstoff - Studie zeigt erste Erfolge</a> – Merkur.de</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-26">Samstag 26 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-26" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.20min.ch/story/gast-gibt-fuer-zwei-hotdogs-16000-dollar-trinkgeld-982942173586">US-Staat New Hampshire : Gast gibt für zwei Hotdogs 16’000 Dollar Trinkgeld</a> – 20 Minuten</li>
+<li><a href="https://www.eurosport.de/fussball/euro-2020/2021/live-italien-osterreich_mtc1109780/live.shtml">Österreich live</a> – Eurosport DE</li>
+<li><a href="https://www.blick.ch/politik/svp-ist-stolz-auf-bundesraete-freudenfeuer-fuer-versenktes-rahmenabkommen-id16632789.html">Schweizweite Freudenfeuer für Abbruch des Rahmenabkommens bei der SVP</a> – BLICK.CH</li>
+<li><a href="https://www.blick.ch/ausland/gast-beschenkt-us-bar-14600-franken-trinkgeld-fuer-hotdog-und-pommes-id16632757.html">Gast beschenkt Bar in Londonderry: 14'600 Franken Trinkgeld</a> – BLICK</li>
+<li><a href="https://www.blick.ch/people-tv/international/helene-fuerst-wurde-verhaftet-und-ist-haessig-psychiatrie-aufenthalt-nach-polizei-attacke-id16632350.html">Helene Fürst nach Polizei-Attacke in Psychiatrie</a> – BLICK</li>
+<li><a href="https://www.blick.ch/ausland/wer-regeln-aufstellt-muss-sich-daran-halten-britischer-gesundheitsminister-tritt-nach-kuss-fotos-zurueck-id16632622.html">Britischer Gesundheitsminister Matt Hancock tritt nach Kuss-Fotos zurück</a> – BLICK</li>
+<li><a href="https://www.srf.ch/sport/fussball/uefa-euro-2020/4-0-sieg-gegen-wales-doppelter-dolberg-schiesst-daenemark-in-den-viertelfinal">4:0-Sieg gegen Wales - Doppelter Dolberg schiesst Dänemark in den Viertelfinal</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/welcher-aussenseiter-schafft-es-in-den-viertelfinal-331272593742">EM-Achtelfinal Wales – Dänemark : Dänen führen zur Pause dank herrlichem Dolberg-Tor</a> – 20 Minuten</li>
+<li><a href="https://www.blick.ch/sport/formel1/so-lief-die-quali-in-spielberg-6-pole-fuer-verstappen-hamilton-erbt-erste-reihe-id16632163.html">Qualifying in Spielberg: 6. Pole für Verstappen - Hamilton erbt erste Reihe</a> – BLICK Sport</li>
+<li><a href="https://www.20min.ch/story/das-giganten-duell-verstappen-gegen-hamilton-geht-in-die-naechste-runde-973608590973">Lewis Hamilton patzt, Max Verstappen sichert sich die Pole Position</a> – 20 Minuten</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-27">Sonntag 27 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-27" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.blick.ch/people-tv/royals/gedenkveranstaltung-zu-dianas-60-geburtstag-findet-in-kleinstem-rahmen-statt-kate-ausgeladen-id16634334.html">Herzogin Kate darf nicht zur Gedenkveranstaltung für Prinzessin Diana</a> – BLICK</li>
+<li><a href="https://www.blick.ch/sport/tennis/papa-ivan-ist-nur-noch-supervisor-bencic-setzt-in-wimbledon-auf-neuen-coach-id16634432.html">Belinda Bencic geht das Abenteuer Wimbledon wieder ohne Papa-Coach Ivan an</a> – BLICK Sport</li>
+<li><a href="https://www.neueschweizerzeitung.ch/china-teilt-video-und-audio-von-seinem-rover-auf-dem-mars/">China teilt Video und Audio von seinem Rover auf dem Mars</a> – Neue Schweizer Zeitung</li>
+<li><a href="https://www.srf.ch/sport/fussball/uefa-euro-2020/titelverteidiger-draussen-belgien-zittert-sich-gegen-portugal-in-den-viertelfinal">Titelverteidiger draussen - Belgien zittert sich gegen Portugal in den Viertelfinal</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://playfront.de/cyberpunk-2077-cd-projekt-sieht-die-performance-auf-einem-zufriedenem-niveau/">Cyberpunk 2077 - CD Projekt sieht Performance auf einem zufriedenstellendem Niveau</a> – PlayFront.de</li>
+<li><a href="https://www.srf.ch/news/international/regionalwahlen-in-frankreich-debakel-fuer-parteien-von-le-pen-und-macron">Regionalwahlen in Frankreich - Debakel für Parteien von Le Pen und Macron</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/sport/fussball/nationalmannschaft/vor-dem-achtelfinal-deschamps-petkovic-hat-hervorragende-arbeit-geleistet">Vor dem Achtelfinal - Deschamps: "Petkovic hat hervorragende Arbeit geleistet"</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.games.ch/cyberpunk-2077/news/performance-zufriedenstellendes-karc/">Performance von Cyberpunk 2077 hat zufriedenstellendes Niveau erreicht</a> – Games.ch</li>
+<li><a href="https://dailygame.at/redfall-id-software-arkane-spiel-entwickler/">DOOM-Entwickler arbeitet mit Arkane gemeinsam an Redfall [UPDATE]</a> – Games News für PS5, Xbox Series X, Switch und PC von DailyGame.AT</li>
+<li><a href="https://www.20min.ch/story/wm-leader-verstappen-will-den-heimsieg-kann-hamilton-ihn-stoppen-499166685192">Lewis Hamilton geschlagen - Max Verstappen gewinnt den Steiermark GP</a> – 20 Minuten</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-28">Montag 28 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-28" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://telebasel.ch/2021/06/29/so-jubeln-schweizer-fans-ueber-sieg-der-nati/">So jubeln Schweizer Fans über Sieg der Nati</a> – Telebasel</li>
+<li><a href="https://www.20min.ch/story/jeder-einzelne-der-hier-ist-ist-stolz-fuer-die-schweiz-zu-spielen-651987032918">Stimmen nach dem Frankreich-Sieg</a> – 20 Minuten</li>
+<li><a href="https://www.eurosport.de/fussball/euro-2020/2021/frankreich-schweiz-bericht-achtelfinale-bukarest-elfmeterschiessen_sto8394862/story.shtml">EM: Schweiz haut Frankreich sensationell im Elfmeterschießen raus und steht im EM-Viertelfinale</a> – Eurosport DE</li>
+<li><a href="https://www.srf.ch/news/schweiz/gewitter-und-starkregen-verletzte-und-schaeden-durch-riesige-hagelkoerner">Gewitter und Starkregen - Verletzte und Schäden durch riesige Hagelkörner</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/news/schweiz/zahlreiche-schadensmeldungen-erneut-heftige-gewitterfront-ueber-der-schweiz">Zahlreiche Schadensmeldungen - Erneut heftige Gewitterfront über der Schweiz</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/news/schweiz/gerichtsprozess-in-bern-gerichtspraesident-der-fahrer-war-heillos-ueberfordert">Gerichtsprozess in Bern - Gerichtspräsident: "Der Fahrer war heillos überfordert"</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/sydney-ist-wegen-delta-variante-wieder-im-lockdown-508138611496">Steigende Zahlen : Sydney ist wegen Delta-Variante wieder im Lockdown</a> – 20 Minuten</li>
+<li><a href="https://www.blick.ch/wirtschaft/delta-drama-in-portugal-hotels-leeren-sich-kliniken-werden-voller-id16636543.html">Delta-Drama in Portugal: Hotels leeren sich, Kliniken werden voller</a> – BLICK</li>
+<li><a href="https://www.srf.ch/meteo/meteo-storys/hagel-sturmboeen-starkregen-unwetterartige-gewitter-unterwegs">Hagel, Sturmböen, Starkregen - Unwetterartige Gewitter unterwegs</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/portugal-fuerchtet-sich-vor-der-bag-quarantaeneliste-330317170353">Angst ums Sommergeschäft : Portugal fürchtet sich vor der BAG-Quarantäneliste</a> – 20 Minuten</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-29">Dienstag 29 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-29" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.neueschweizerzeitung.ch/baubeginn-des-quadratkilometer-array-observatoriums/">Baubeginn des Quadratkilometer-Array-Observatoriums</a> – Neue Schweizer Zeitung</li>
+<li><a href="https://www.srf.ch/sport/fussball/uefa-euro-2020/noch-8-teams-im-rennen-das-sind-die-viertelfinals-an-der-euro">Noch 8 Teams im Rennen - Das sind die Viertelfinals an der EURO</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/sport/fussball/uefa-euro-2020/england-besiegt-deutschland-sterling-und-kane-beenden-die-amtszeit-von-loew">England besiegt Deutschland - Sterling und Kane beenden die Amtszeit von Löw</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/jamie-lynn-spears-spricht-erstmals-oeffentlich-ueber-britney-621185947459">Jetzt meldet sich die Schwester</a> – 20 Minuten</li>
+<li><a href="https://www.srf.ch/sport/mehr-sport/rad/4-etappe-der-tour-de-france-mark-cavendish-dreht-die-zeit-zurueck-und-triumphiert">4. Etappe der Tour de France - Mark Cavendish dreht die Zeit zurück und triumphiert</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/sport/fussball/uefa-euro-2020/nati-reist-nach-russland-mueder-torschuetze-stolzer-praesident-und-appetit-auf-mehr">Nati reist nach Russland - Müder Torschütze, stolzer Präsident und Appetit auf mehr</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/news/schweiz/reaktionen-im-netz-der-sieg-der-schweizer-nati-geht-viral">Reaktionen im Netz - Der Sieg der Schweizer Nati geht viral</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/england-will-gegen-deutschland-rache-fuer-wembley-revanche-900949042801">Knüller im EM-Achtelfinal : England will gegen Deutschland Rache für Wembley-Revanche</a> – 20 Minuten</li>
+<li><a href="https://www.20min.ch/story/neue-diaet-zahnspange-sperrt-den-traegern-den-kiefer-zu-276189984344">Zwei Millimeter zum Essen</a> – 20 Minuten</li>
+<li><a href="https://www.blick.ch/schweiz/zentralschweiz/fahrerin-eingeklemmt-auto-rollt-abhang-runter-kind-rettet-sich-aus-fenster-id16639220.html">Auto rollt Abhang runter - Kind rettet sich aus Fenster</a> – BLICK</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+             <li>
+              <i class="bx bx-calendar icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-30">Mittwoch 30 Juni 2021<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-30" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  <ul class="news-list-items"><li><a href="https://www.blick.ch/sport/fussball/em/vor-7-jahren-noch-in-der-dritthoechsten-liga-fassnacht-em-haette-ich-mir-nie-ertraeumt-id16643284.html">Euro 2020: Fassnacht: Vor 7 Jahren noch in der 3. Liga</a> – BLICK Sport</li>
+<li><a href="https://www.srf.ch/sport/tennis/grand-slam-turniere/sieg-in-der-2-runde-golubic-fegt-collins-vom-platz">Sieg in der 2. Runde - Golubic fegt Collins vom Platz</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/news/international/us-gericht-kippt-verurteilung-schock-und-freude-ueber-bill-cosbys-freilassung">US-Gericht kippt Verurteilung - Schock und Freude über Bill Cosbys Freilassung</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/sammelten-freunde-der-verfassung-25000-unterschriften-innert-7-tagen-710105923881">Gegen Covid-Gesetz : Sammelten «Freunde der Verfassung» 25’000 Unterschriften innert 7 Tagen?</a> – 20 Minuten</li>
+<li><a href="https://www.srf.ch/news/wirtschaft/schweizer-nationalmannschaft-frankreich-besiegt-so-reagiert-der-marktwert-der-nati-spieler">Schweizer Nationalmannschaft - Frankreich besiegt: So reagiert der Marktwert der Nati-Spieler</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.srf.ch/sport/tennis/grand-slam-turniere/am-donnerstag-um-ca-17-30-uhr-federer-tritt-erneut-auf-dem-centre-court-an">Am Donnerstag um ca. 17:30 Uhr - Federer tritt erneut auf dem Centre Court an</a> – Schweizer Radio und Fernsehen (SRF)</li>
+<li><a href="https://www.20min.ch/story/royals-und-stars-fiebern-live-im-stadion-mit-304451446862">EM 2021 : Royals und Stars fiebern live im Stadion mit</a> – 20 Minuten</li>
+<li><a href="https://www.20min.ch/story/brian-veroeffentlicht-briefe-auf-instagram-864329472316">In Isolationshaft geschrieben : Brian veröffentlicht Briefe auf Instagram</a> – 20 Minuten</li>
+<li><a href="https://www.20min.ch/story/verurteilung-von-ex-fernsehstar-bill-cosby-wegen-sexuellen-missbrauchs-aufgehoben-707365003719">USA : Verurteilung von Ex-Fernsehstar Bill Cosby wegen sexuellen Missbrauchs aufgehoben</a> – 20 Minuten</li>
+<li><a href="https://www.tagesspiegel.de/wissen/wirkungsvoller-ansatz-zur-seuchenbekaempfung-mit-kontrollierter-infektion-gegen-malaria/27379440.html">Wirkungsvoller Ansatz zur Seuchenbekämpfung: Mit kontrollierter Infektion gegen Malaria</a> – Tagesspiegel</li>
+</ul>
+                </p>
+              </div>
+            </li>
+          
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+
+        <section id="team" class="team section-bg">       <div class="container" data-aos="fade-up">           <div class="section-title">               <h2>Experimental</h2>                  <p>                 Linear correlation between # of visits and gap between Blick and 20 Minutes?<br/><img src="assets/graphs/06.2021_lmplot.png"/>                 </p>                  <p>                 Pearson's R: (0.3766570456661167, 0.04020583190045816)                 </p>           </div>       </div>   </section>
+    <!-- ======= Skills Section ======= 
+    <section id="skills" class="skills">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+            <img src="assets/img/skills.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+            <h3>Voluptatem dignissimos provident quasi corporis voluptates</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+
+            <div class="skills-content">
+
+              <div class="progress">
+                <span class="skill">HTML <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">CSS <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">JavaScript <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">Photoshop <i class="val">55%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    -->
+
+    <!-- ======= Services Section ======= 
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">Lorem Ipsum</a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">Sed ut perspici</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Magni Dolores</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4><a href="">Nemo Enim</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    -->
+
+    <!-- ======= Cta Section ======= 
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Call To Action</h3>
+            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    -->
+
+   
+
+    <!-- ======= Team Section ======= 
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Pricing Section ======= 
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Pricing</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <h3>Free Plan</h3>
+              <h4><sup>$</sup>0<span>per month</span></h4>
+              <ul>
+                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
+                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
+                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
+                <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <a href="#" class="buy-btn">Get Started</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="box featured">
+              <h3>Business Plan</h3>
+              <h4><sup>$</sup>29<span>per month</span></h4>
+              <ul>
+                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
+                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
+                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
+                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
+                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
+              </ul>
+              <a href="#" class="buy-btn">Get Started</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <h3>Developer Plan</h3>
+              <h4><sup>$</sup>49<span>per month</span></h4>
+              <ul>
+                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
+                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
+                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
+                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
+                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
+              </ul>
+              <a href="#" class="buy-btn">Get Started</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= Contact Section ======= 
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 5589 55488 55s</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4> Automatically created from Mediapulse data</h4>
+            <p>Each month, Mediapulse releases "Brands Daily" data you can download as a excel spreadsheet. This is our starting point.</p>
+             <p>Beware: data structure and format in the PDF file is not consistent... Check <a href="Mediapulse_Online_Content_Traffic_Data.xlsx">a model</a>: this is what the python script expects.</p>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Blick</span></strong>. All Rights Reserved.
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+        Template designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
